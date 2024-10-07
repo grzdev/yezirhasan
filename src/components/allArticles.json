@@ -1,0 +1,124 @@
+{
+    "work":[
+        {
+            "id": 1,
+            "img": "https://i.pinimg.com/564x/d8/b0/0e/d8b00e9ab9a702f4e5f7ee94c3ba0c85.jpg",
+            "topic": "EURO24 Power Rankings",
+            "category": "Football",
+            "minread": "5 mins",
+            "datePosted": "Dec 23",
+            "desc": "The dust has settled, the qualifiers are complete, and Europe's best have staked their claim for Euro 2024 glory in Germany...",
+            "link": "https://paper.wf/zir/euro24-power-rankings"
+        },
+        {
+            "id": 2,
+            "img": "https://i.pinimg.com/736x/16/ef/1a/16ef1a2c7d920719cd4585c43f2ac4a6.jpg",
+            "topic": "Jude Bellingham: Real Madrid's New Zidane?",
+            "category": "Football",
+            "minread": "4 mins",
+            "datePosted": "Nov 15",
+            "desc": "Watching the young, wiry figure of Jude Bellingham glide across the pitch with the same effortless grace and poise once witnessed in...",
+            "link": "https://paper.wf/zir/jude-bellingham-real-madrids-new-zidane"
+        },
+        {
+            "id": 3,            
+            "img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
+            "topic": "Can the Celtics make it to the EC finals? ",
+            "category": "NBA",
+            "minread": "5 mins",
+            "datePosted": "Nov 5",
+            "desc": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record...",
+            "link": "https://paper.wf/zir/are-the-celtics-a-lock-to-make-it-into-the-eastern-conference-finals"
+        },
+        {
+            "id": 4,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 1",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        },
+        {
+            "id": 5,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 8",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        },
+        {
+            "id": 6,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 2",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        },
+        {
+            "id": 7,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 4",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        },
+        {
+            "id": 8,            
+            "img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
+            "topic": "Can the Celtics make it to the EC finals? ",
+            "category": "NBA",
+            "minread": "5 mins",
+            "datePosted": "Nov 5",
+            "desc": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record...",
+            "link": "https://paper.wf/zir/are-the-celtics-a-lock-to-make-it-into-the-eastern-conference-finals"
+        },
+        {
+            "id": 9,            
+            "img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
+            "topic": "Can the Celtics make it to the EC finals? ",
+            "category": "NBA",
+            "minread": "5 mins",
+            "datePosted": "Nov 5",
+            "desc": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record...",
+            "link": "https://paper.wf/zir/are-the-celtics-a-lock-to-make-it-into-the-eastern-conference-finals"
+        },
+        {
+            "id": 10,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 1",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        },
+        {
+            "id": 11,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 1",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        },
+        {
+            "id": 12,
+            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 1",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
+        }
+    ]
+}
