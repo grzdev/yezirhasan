@@ -8,17 +8,17 @@
 
 <div class="flex py-[2vw] h-full bg-white px-[3vw] flex-col overflow-x-hidden">
   <div class="w-full h-[18.5vw] flex">
-    <div class="flex-1 bg-red-600 flex justify-center items-center py-[1vw] px-[1vw] rounded-tl-[1vw]">
+    <div class="flex-1 bg-red-600 flex justify-center items-center py-[1vw] px-[1vw] rounded-tl-[3vw] md:rounded-tl-[1vw]">
       <h1 
-        class="anton-regular tracking-lighter mt-[-3vw] text-white text-[14vw]" 
+        class="anton-regular font-bold tracking-lighter mt-[-1vw] md:mt-[-3vw] text-white text-[14vw]" 
         style="transform: scaleY(1.2); "
       >
         sport
       </h1>
     </div>
-    <div class="flex-1 bg-black flex justify-center items-center py-[1vw] px-[1vw] rounded-tr-[1vw]">
+    <div class="flex-1 bg-black flex justify-center items-center py-[1vw] px-[1vw] rounded-tr-[3vw] md:rounded-tr-[1vw]">
       <h1 
-        class="anton-regular tracking-lighter mt-[-3vw] text-white text-[14vw]" 
+        class="anton-regular font-bold tracking-lighter mt-[-1vw] md:mt-[-3vw] text-white text-[14vw]" 
         style="transform: scaleY(1.2);"
       >
         mania
@@ -57,7 +57,7 @@
   </div>
 
   <h1 
-    class="anton-regular2 mt-[3vw] md:mt-[1vw] text-[7vw] leading-[7vw] flex text-start tracking-lighter"
+    class="anton-regular2 font-bold mt-[3vw] md:mt-[1vw] text-[7vw] leading-[9vw] md:leading-[7vw] flex text-start tracking-lighter"
     style="word-spacing: 0.5vw;"
   >
    Jude Bellingham: Real Madrid's New Zidane?
@@ -70,14 +70,14 @@
       class="w-full md:w-[50vw] rounded-xl"
     />
     <div class="flex flex-col w-full mt-[7vw] md:mt-[0vw] gap-[7vw] md:gap-[2vw] px-[0vw] md:px-[2vw]">
-      <div class="w-full h-[full] md:h-[19vw] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5vw] md:leading-[2.1vw]">
+      <div class="w-full h-[full] md:h-[19vw] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.1vw]">
         Watching the young, wiry figure of Jude Bellingham glide across the pitch with the same effortless 
         grace and poise once witnessed in the great Zinedine Zidane, a wave of nostalgia washes over me. 
         The long-sleeved shirt, the Adidas predator boots, and the jersey number 5 are not mere accessories but 
         symbols of a bygone era, a time when football was played with an artistry that seems almost lost in today's 
         high-octane, physically demanding game.
       </div>
-      <div class="w-full h-[full] md:h-[19vw] text-[4vw] md:text-[1.6vw] font-semibold text-start leading-[2.1vw] tracking-wide md:tracking-light leading-[5vw] md:leading-[2.1vw]">
+      <div class="w-full h-[full] md:h-[19vw] text-[4vw] md:text-[1.6vw] font-semibold text-start leading-[2.1vw] tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.1vw]">
         Zidane's balletic movements, his ability to control the ball with the subtlest of touches, and his 
         uncanny knack for finding his teammates with inch-perfect passes that sliced through the tightest of
          defenses made him one of the best midfielders the game has ever seen. In Bellingham, you see that same 
@@ -127,7 +127,7 @@
 <style>
   .anton-regular {
   font-family: "Anton", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
 }
 
