@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import Yezir from "../image/yezir.png";
-  import bookshelf from "../image/book4.png";
+  import newspaper from "../image/np3.png"
 
   let headersVisible = [false, false, false];
   let cardVisible = false;
@@ -18,8 +18,9 @@
   });
 </script>
 
-<div class="flex flex-col justify-center items-start p-[2vw] px-[6vw] md:px-[1.7vw] mt-[5vw] md:mt-[0] ">
-  <div class="flex flex-col items-start space-y-[8vw] md:space-y-[2vw]">
+<div class="flex flex-col career-section justify-center  p-[2vw] px-[6vw] md:px-[1.7vw] mt-[5vw] md:mt-[0] ">
+  <!-- Career headers -->
+  <div class="flex career-div flex-col items-start space-y-[8vw] md:space-y-[2vw]">
     {#if headersVisible[0]}
       <h1
         class="text-[15vw] leading-[15vw] md:leading-none text-start md:text-[5vw] lg:text-[8.5vw] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
@@ -49,8 +50,8 @@
     {/if}
   </div>
 
-  
-  <div class="flex flex-col md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[8vh] md:mt-[9vh]">
+  <!-- Links to other pages  -->
+  <div class="flex links-to-pages flex-col md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[6vh] md:mt-[9vh]">
     {#if cardVisible}
       <a href="/about/">
         <div class="move-from-bottom w-[86vw] h-[32vh] md:w-[47vw] md:h-[42vh] cursor-pointer px-[5vw] md:px-[2vw] bg-[#a8a8a8] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out hover:bg-[#44e94b] dark:hover:bg-[#43bb47] overflow-hidden">
@@ -93,17 +94,17 @@
             </div>
           </div>
           <img
-            src={bookshelf}
+            src={newspaper}
             alt="bookshelf"
             style="max-height: 100%; max-width: 100%; object-fit: contain;"
-            class="mt-[-4vh] transition-transform duration-1000 group-hover:translate-y-[1vh]"
+            class="mt-[-1vh] md:mt-[-7vh] w-[60vw] ml-[10vw] md:w-[30vw] md:ml-[4vw] transition-transform duration-1000 group-hover:translate-y-[3vh]"
           />
         </div>
       </a>
     {/if}
   </div> 
 
-  <div class="flex flex-col md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[2.8vh]">
+  <div class="flex flex-col footer other-links md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[2.8vh]">
     {#if cardVisible}
       <div class="flex flex-col md:flex-row gap-[1.4vw]">
         <a href="https://github.com/yeziR4">
@@ -181,6 +182,17 @@
     {/if}
   </div> 
 
+  <!-- Other links -->
+  <div
+    class="move-from-buttom2 mt-[14vw] md:mt-[5vw] mb-[1vw] flex justify-center items-center flex-row gap-[3vw] "
+  >
+    <h1 class="text-[11vw] md:text-[3vw] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[#6a6868] dark:text-[#989898]">
+      <Icon icon="fluent:mail-add-20-filled" />
+    </h1>
+    <h1 class="text-[11vw] md:text-[3vw] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[#6a6868] dark:text-[#989898]">
+      <Icon icon="devicon-plain:linkedin" />
+    </h1>
+  </div>
 </div>
 
 
@@ -196,6 +208,21 @@
   @keyframes moveFromBottomRight4 {
     0% {
       transform: translate(10%, 40%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+  .move-from-buttom2 {
+    animation: moveFromBottomRight2 4s ease-in-out;
+  }
+
+  @keyframes moveFromBottomRight2 {
+    0% {
+      transform: translate(10%, 100%);
       opacity: 0;
     }
     100% {

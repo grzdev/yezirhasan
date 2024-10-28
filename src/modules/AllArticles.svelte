@@ -45,7 +45,7 @@
 </script>
 
 <!-- Page Layout -->
-<div class="p-[3vw] overflow-x-hidden">
+<div class="px-[3vw] py-[2vw] overflow-x-hidden">
   <!-- Header with back arrow -->
   <div class="flex flex-row w-full justify-between items-center">
     <button 
@@ -55,7 +55,7 @@
       <h1 class="text-[6vw] md:text-[3vw]">
         <Icon icon="heroicons:arrow-long-left-solid" />
       </h1>
-      <h1 class="text-[5vw] ml-[2vw] w-full md:text-[2vw] font-semibold ">
+      <h1 class="text-[5vw] ml-[1vw] w-full md:text-[2vw] font-semibold ">
         All Articles
       </h1>
     </button>
@@ -73,7 +73,7 @@
 
   <!-- Category and Reading Time Filter Menu -->
   {#if showCategories}
-    <div class="categories ml-[-1vw] flex items-start gap-[0.5rem] md:gap-[0] md:items-center flex-col md:flex-row justify-between mt-2 mb-[3vw] md:mb-[0] px-[1vw] items-start" transition:slide>
+    <div class="categories ml-[6vw] md:ml-[3vw] flex items-start gap-[0.5rem] md:gap-[0] md:items-center flex-col md:flex-row justify-between mt-2 mb-[3vw] md:mb-[0] px-[1vw] items-start" transition:slide>
       <div class="flex gap-2 items-center">
         {#each categories as category}
           <button
@@ -98,7 +98,7 @@
 
         <!-- Apply Button -->
         <button
-          class="mt-2 p-[0.4rem] md:p-2 text-[2.5vw] md:text-[1.1vw] bg-[#7c7b7b] dark:bg-[#d7d7d7] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out text-[white] dark:text-[black] font-semibold rounded-md"
+          class="mt-2 p-[0.4rem] md:p-2 text-[2.5vw] md:text-[1.1vw] bg-[#6a6868] dark:bg-[#d7d7d7] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out text-[white] dark:text-[black] font-semibold rounded-md"
           on:click={applyFilters}
         >
           Apply
@@ -108,7 +108,7 @@
   {/if}
 
   <!-- Articles grid with 4 columns -->
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-[2vw] md:gap-[-4vw] mt-[2vw] md:mt-[1vw] fade-in-bottom ml-[2vw] md:ml-[2vw]">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-[4vw] md:gap-[2vw] mt-[4vw] md:mt-[1vw] fade-in-bottom ml-[15vw] md:ml-[4vw]">
     <WorkCard work={filteredWork} />
   </div>
 </div>

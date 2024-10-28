@@ -58,7 +58,7 @@
   </h1>
 
   {#if isMobileView && !menuOpen}
-    <div class="md:hidden mt-[5vw]">
+    <div class="md:hidden mt-[3vw]">
       <button on:click={toggleMenu}>
         <Icon
           icon="line-md:close-to-menu-alt-transition"
@@ -67,7 +67,7 @@
       </button>
     </div>
   {:else}
-    <div class="md:hidden mt-[5vw]">
+    <div class="md:hidden mt-[3vw]">
       <button on:click={toggleMenu}>
         <Icon
           icon="line-md:menu-to-close-alt-transition"
@@ -104,7 +104,7 @@
 
     <div class="flex flex-row items-center gap-[4vw]">
       <a href="/contact">
-        <button class="w-[10vw] h-[3vw] bg-[#2a7544] dark:bg-[white] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-xl">
+        <button class="w-[10vw] h-[3vw] bg-[#019334] dark:bg-[white] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-xl">
           <h1 class="font-semibold text-[1.3vw]">Get in touch</h1>
         </button>
       </a>
