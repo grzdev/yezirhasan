@@ -53,7 +53,7 @@
     <!-- Featured Work Header -->
     <div class="flex items-center w-full px-[3vw] md:px-[1.7vw] justify-between">
       <h2
-        class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#989898] mt-[1.2vw] ml-[1vw] md:mt-[-0.7vw]"
+        class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#989898] mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
       >
         Featured Articles
       </h2>
@@ -72,7 +72,7 @@
 
     <!-- Category and Reading Time Filter Menu -->
     {#if showCategories}
-      <div class="categories flex items-start gap-[0.5rem] md:gap-[0] md:items-center flex-col md:flex-row justify-between mb-[3vw] md:mb-[0] p-[2vw] px-[6vw] md:py-[0.1vw] md:px-[3vw]  items-start" transition:slide>
+      <div class="categories ml-[-1.8vw] md:ml-[0vw] flex items-start gap-[0.5rem] md:gap-[0] md:items-center flex-col md:flex-row justify-between mb-[3vw] md:mb-[0] p-[2vw] px-[6vw] md:py-[0.1vw] md:px-[3vw]  items-start" transition:slide>
         <div class="flex gap-2 items-center">
           {#each categories as category}
             <button
@@ -108,14 +108,14 @@
     <!-- Work Cards -->
     <div class="w-full mt-[2vw] md:mt-[0vw] px-[2.5vw] md:px-[2.5vw] ml-[0.5rem]">
       <div
-        class="move-from-buttom flex flex-row gap-[3vw] md:gap-[2vw] overflow-x-auto custom-scrollbar move-container"
+        class="move-from-buttom flex flex-row gap-[3vw] md:gap-[2vw] overflow-x-auto overflow-y-hidden custom-scrollbar move-container"
       >
         <WorkCard work={filteredWork} />
       </div>
     </div>
 
     <a href="/articles/">
-      <div class="w-[55vw] md:w-[33vw] px-[5.4vw] md:px-[3vw] mt-[5vw] md:mt-[1vw] flex items-center justify-between move-from-buttom2 hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#989898] flex  text=start cursor-pointer ">
+      <div class="w-[55vw] md:w-[33vw] px-[5.4vw] md:px-[3vw] mt-[5vw] mb-[0vw] md:mb-[1vw] md:mt-[3vw] flex items-center justify-between move-from-buttom2 hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#989898] flex  text=start cursor-pointer ">
         <h2
           class=" "
         >
