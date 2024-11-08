@@ -3,6 +3,7 @@
   import type { Work } from "../components/workInterface";
   export let work: Work[] = [];
   import newImg from "../image/news-image.jpeg"
+  export let data;
 
   let flippedCardId: string | null = null;
 
@@ -86,7 +87,8 @@
         <p class="noticia-text-regular w-[37vw] md:w-[16vw] text-start text-[3.2vw] md:text-[1.5vw] font-semibold">
           <!-- {work.desc} -->
         </p>
-        <a href={`/article/${work.id}`}>
+
+        <a href="/news/{work.id}">
           <h1 class="noticia-text-regular-italic text-[3.2vw] md:text-[1.3vw] font-semibold decoration-solid">
            Continue reading →
           </h1>
