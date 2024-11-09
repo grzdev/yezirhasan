@@ -1,9 +1,7 @@
 <script>
-  import ThemeSwitch from "$lib/ThemeSwitch/ThemeSwitch.svelte";
-
-
+	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
 </script>
 
 <div>
-    <ThemeSwitch />
+	<ThemeSwitch />
 </div>
