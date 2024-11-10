@@ -12,7 +12,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@iconify/svelte": "^3.1.4",
+		"@iconify/svelte": "^3.1.6",
 		"@rollup/plugin-json": "^6.1.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
