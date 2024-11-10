@@ -47,12 +47,12 @@
 			<img
 				src={Logo}
 				alt=""
-				class="w-[21vw] md:w-[5vw] hover:brightness-50 dark:hidden transition duration-500 ease-in-out"
+				class="w-[14vw] md:w-[4.5vw] hover:brightness-50 dark:hidden transition duration-500 ease-in-out"
 			/>
 			<img
 				src={LogoDark2}
 				alt=""
-				class="w-[21vw] md:w-[5vw] hidden dark:block hover:brightness-200 transition duration-500 ease-in-out"
+				class="w-[14vw] md:w-[4.5vw] hidden dark:block hover:brightness-200 transition duration-500 ease-in-out"
 			/>
 		</a>
 	</h1>
