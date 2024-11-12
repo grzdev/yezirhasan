@@ -20,7 +20,10 @@
 
 	onMount(() => {
 		checkViewport();
-		window.addEventListener('resize', checkViewport);
+		window.addEventListener(
+			'resize',
+			checkViewport
+		);
 	});
 
 	// Toggle menu function
@@ -36,23 +39,27 @@
 	}
 
 	// Current path logic using $page store
-	$: currentPath = $page.url.pathname.endsWith('/')
+	$: currentPath = $page.url.pathname.endsWith(
+		'/'
+	)
 		? $page.url.pathname.slice(0, -1) // Remove trailing slash
 		: $page.url.pathname;
 </script>
 
-<nav class="flex flex-row py-[3vw] px-[2vw] md:py-[1vw] md:px-[1.5vw] items-center justify-between">
+<nav
+	class="flex flex-row py-[3vw] px-[2vw] md:py-[1vw] md:px-[1.5vw] items-center justify-between"
+>
 	<h1 class="text-[4vw] font-medium mt-[0] logo">
 		<a href="/">
 			<img
 				src={Logo}
 				alt=""
-				class="w-[14vw] md:w-[4.5vw] hover:brightness-50 dark:hidden transition duration-500 ease-in-out"
+				class="w-[13vw] md:w-[4.5vw] hover:brightness-50 dark:hidden transition duration-500 ease-in-out"
 			/>
 			<img
 				src={LogoDark2}
 				alt=""
-				class="w-[14vw] md:w-[4.5vw] hidden dark:block hover:brightness-200 transition duration-500 ease-in-out"
+				class="w-[13vw] md:w-[4.5vw] hidden dark:block hover:brightness-200 transition duration-500 ease-in-out"
 			/>
 		</a>
 	</h1>
@@ -77,9 +84,18 @@
 		</div>
 	{/if}
 
-	<div class="flex flex-row items-center gap-[3vw] hidden md:flex mt-[-1vw]">
-		<div class="flex flex-row gap-[3vw] text-[1.2vw] font-semibold ml-[5vw]">
-			<a href="/work" class={currentPath === '/work' ? 'active' : ''}>
+	<div
+		class="flex flex-row items-center gap-[3vw] hidden md:flex mt-[-1vw]"
+	>
+		<div
+			class="flex flex-row gap-[3vw] text-[1.2vw] font-semibold ml-[5vw]"
+		>
+			<a
+				href="/work"
+				class={currentPath === '/work'
+					? 'active'
+					: ''}
+			>
 				<h1
 					class="text-[#5e5e5e] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page1"
 				>
@@ -87,7 +103,12 @@
 				</h1>
 			</a>
 
-			<a href="/about" class={currentPath === '/about' ? 'active' : ''}>
+			<a
+				href="/about"
+				class={currentPath === '/about'
+					? 'active'
+					: ''}
+			>
 				<h1
 					class="text-[#5e5e5e] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page2"
 				>
@@ -101,7 +122,12 @@
 				Resume
 			</h1>
 
-			<a href="/more" class={currentPath === '/more' ? 'active' : ''}>
+			<a
+				href="/more"
+				class={currentPath === '/more'
+					? 'active'
+					: ''}
+			>
 				<h1
 					class="text-[#5e5e5e] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page4"
 				>
@@ -110,12 +136,16 @@
 			</a>
 		</div>
 
-		<div class="flex flex-row items-center gap-[4vw]">
+		<div
+			class="flex flex-row items-center gap-[4vw]"
+		>
 			<a href="/contact">
 				<button
 					class="w-[10vw] h-[3vw] bg-[#019334] dark:bg-[white] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-xl"
 				>
-					<h1 class="font-semibold text-[1.3vw]">Get in touch</h1>
+					<h1 class="font-semibold text-[1.3vw]">
+						Get in touch
+					</h1>
 				</button>
 			</a>
 		</div>
@@ -138,7 +168,9 @@
 			out:fade={{ duration: 700 }}
 		>
 			<div class="block md:hidden">
-				<div class="flex flex-col gap-[2rem] items-center justify-center">
+				<div
+					class="flex flex-col gap-[2rem] items-center justify-center"
+				>
 					<a
 						href="/"
 						class={currentPath === '/'
@@ -192,7 +224,9 @@
 						in:fly={{ y: 200, duration: 1900 }}
 						out:fly={{ y: 200, duration: 300 }}
 					>
-						<h1 class="font-semibold text-xl">Get in touch</h1>
+						<h1 class="font-semibold text-xl">
+							Get in touch
+						</h1>
 					</a>
 				</div>
 			</div>
