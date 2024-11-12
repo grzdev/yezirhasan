@@ -12,8 +12,14 @@
 
 	onMount(() => {
 		headersVisible = [true, false, false];
-		setTimeout(() => (headersVisible[1] = true), 400);
-		setTimeout(() => (headersVisible[2] = true), 800);
+		setTimeout(
+			() => (headersVisible[1] = true),
+			400
+		);
+		setTimeout(
+			() => (headersVisible[2] = true),
+			800
+		);
 		setTimeout(() => (cardVisible = true), 1200);
 		setTimeout(() => (cardVisible2 = true), 1600); // 1 second after the last header
 	});
@@ -29,9 +35,13 @@
 	}
 </script>
 
-<div class="flex flex-col career-section justify-center px-[4vw] md:px-[1.7vw] mt-[5vw] md:mt-[0]">
+<div
+	class="flex flex-col career-section justify-center px-[4vw] md:px-[1.7vw] mt-[5vw] md:mt-[0]"
+>
 	<!-- Career headers -->
-	<div class="flex career-div flex-col items-start space-y-[8vw] md:space-y-[2vw]">
+	<div
+		class="flex career-div flex-col items-start space-y-[8vw] md:space-y-[2vw]"
+	>
 		{#if headersVisible[0]}
 			<h1
 				class="text-[15vw] leading-[15vw] md:leading-none text-start md:text-[5vw] lg:text-[8.5vw] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
@@ -68,28 +78,30 @@
 		{#if cardVisible}
 			<a href="/about/">
 				<div
-					class="move-from-bottom w-[90vw] h-[32vh] md:w-[47vw] md:h-[42vh] cursor-pointer px-[5vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out hover:bg-[#7bff71] dark:hover:bg-[#43bb47] overflow-hidden"
+					class="move-from-bottom w-[90vw] h-[32vh] md:w-[47vw] md:h-[42vh] cursor-pointer px-[5vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out md:hover:bg-[#7bff71] md:dark:hover:bg-[#43bb47] overflow-hidden"
 				>
 					<div class="flex flex-col">
 						<h1
-							class="text-[6vw] md:text-[3.1vw] text-[black] dark:text-[#f4f4f4] font-semibold mt-[6vh] md:mt-[8vh] transition-opacity duration-1000 group-hover:opacity-0"
+							class="text-[6vw] md:text-[3.1vw] text-[black] dark:text-[#f4f4f4] font-semibold mt-[6vh] md:mt-[8vh] transition-opacity duration-1000 md:group-hover:opacity-0"
 						>
 							Hey, I'm Yezir 👋🏼
 						</h1>
 						<img
 							src={Yezir}
 							alt="portrait"
-							class="transition-transform duration-1000 mt-[0.4vh] md:mt-[1.4vh] group-hover:translate-x-[27vw] group-hover:translate-y-[-10vh] md:group-hover:translate-x-[20vw] md:group-hover:translate-y-[-17vh] group-hover:duration-[1000ms]"
+							class="transition-transform duration-1000 mt-[0.4vh] md:mt-[1.4vh] md:group-hover:translate-x-[22vw] md:group-hover:translate-y-[-15vh] md:group-hover:translate-x-[20vw] md:group-hover:translate-y-[-17vh] group-hover:duration-[1000ms]"
 							style="max-height: 100%; max-width: 100%; object-fit: contain;"
 						/>
 					</div>
 					<h1
-						class="text-[8vw] md:text-[3vw] mt-[20vh] ml-[14vw] transition-all duration-1000 group-hover:translate-x-[10vw] group-hover:opacity-0"
+						class="text-[8vw] md:text-[3vw] mt-[20vh] ml-[14vw] transition-all duration-1000 md:group-hover:translate-x-[10vw] md:group-hover:opacity-0"
 					>
-						<Icon icon="heroicons:arrow-long-right" />
+						<Icon
+							icon="heroicons:arrow-long-right"
+						/>
 					</h1>
 					<h1
-						class="text-[7vw] md:text-[3vw] text-start font-semibold w-[15vw] absolute top-[7vh] left-[calc(100% + 2.4vw)] opacity-0 transition-opacity duration-500 group-hover:opacity-100 delay-200"
+						class="text-[7vw] md:text-[3vw] text-start font-semibold w-[15vw] absolute top-[7vh] left-[calc(100% + 2.4vw)] opacity-0 md:transition-opacity duration-500 md:group-hover:opacity-100 delay-200"
 					>
 						Learn More About Me
 					</h1>
@@ -98,29 +110,35 @@
 
 			<a href="/work/">
 				<div
-					class="move-from-bottom w-[90vw] h-[32vh] md:w-[47vw] md:h-[42vh] cursor-pointer px-[5vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#3b3b40] rounded-2xl flex flex-col relative group transition-colors duration-1000 ease-in-out hover:bg-[#7bff71] dark:hover:bg-[#43bb47] overflow-hidden"
+					class="move-from-bottom w-[90vw] h-[32vh] md:w-[47vw] md:h-[42vh] cursor-pointer px-[5vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#3b3b40] rounded-2xl flex flex-col relative group transition-colors duration-1000 ease-in-out md:hover:bg-[#7bff71] md:dark:hover:bg-[#43bb47] overflow-hidden"
 				>
-					<div class="flex items-start flex-col gap-[0.2vw]">
+					<div
+						class="flex items-start flex-col gap-[0.2vw]"
+					>
 						<h1
-							class="text-[3vw] md:text-[1vw] mt-[4vh] font-semibold transition-transform duration-1000 group-hover:translate-y-[1vw]"
+							class="text-[3vw] md:text-[1vw] mt-[4vh] font-semibold transition-transform duration-1000 md:group-hover:translate-y-[1vw]"
 						>
 							FEATURED WORK
 						</h1>
-						<div class="flex flex-row items-center justify-between w-full">
+						<div
+							class="flex flex-row items-center justify-between w-full"
+						>
 							<h1
-								class="text-[6.6vw] md:text-[2.6vw] font-semibold transition-all duration-1000 group-hover:translate-x-[10vw] group-hover:translate-y-[0.5vw] group-hover:opacity-0"
+								class="text-[6.6vw] md:text-[2.6vw] font-semibold transition-all duration-1000 md:group-hover:translate-x-[10vw] md:group-hover:translate-y-[0.5vw] md:group-hover:opacity-0"
 							>
 								Sport Articles
 							</h1>
 							<h1
-								class="text-[6.6vw] md:text-[2.6vw] font-semibold absolute left-[-8vw] opacity-0 transition-all duration-1000 group-hover:translate-x-[10vw] group-hover:translate-y-[1vw] group-hover:opacity-100"
+								class="text-[6.6vw] md:text-[2.6vw] font-semibold absolute left-[-8vw] opacity-0 transition-all duration-1000 md:group-hover:translate-x-[10vw] md:group-hover:translate-y-[1vw] md:group-hover:opacity-100"
 							>
 								View My Sport Articles
 							</h1>
 							<h1
-								class="text-[8vw] md:text-[3vw] transition-transform duration-1000 group-hover:translate-y-[1vw]"
+								class="text-[8vw] md:text-[3vw] transition-transform duration-1000 md:group-hover:translate-y-[1vw]"
 							>
-								<Icon icon="heroicons:arrow-long-right" />
+								<Icon
+									icon="heroicons:arrow-long-right"
+								/>
 							</h1>
 						</div>
 					</div>
@@ -128,38 +146,48 @@
 						src={newspaper}
 						alt="bookshelf"
 						style="max-height: 100%; max-width: 100%; object-fit: contain;"
-						class="mt-[-1vh] md:mt-[-7vh] w-[60vw] ml-[10vw] md:w-[30vw] md:ml-[4vw] transition-transform duration-1000 group-hover:translate-y-[3vh]"
+						class="mt-[-1vh] md:mt-[-7vh] w-[60vw] ml-[10vw] md:w-[30vw] md:ml-[4vw] transition-transform duration-1000 md:group-hover:translate-y-[3vh]"
 					/>
 				</div>
 			</a>
 		{/if}
 	</div>
 
-	<div class="flex flex-col footer other-links md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[2.8vh]">
+	<div
+		class="flex flex-col footer other-links md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[2.8vh]"
+	>
 		{#if cardVisible}
-			<div class="flex flex-col md:flex-row gap-[1.4vw]">
+			<div
+				class="flex flex-col md:flex-row gap-[1.4vw]"
+			>
 				<a href="https://github.com/yeziR4">
 					<div
-						class="move-from-bottom px-[6vw] md:px-[2vw] flex-col w-[90vw] h-[32vh] md:w-[22.8vw] md:h-[47vh] cursor-pointer bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out hover:bg-[#7bff71] dark:hover:bg-[#43bb47] overflow-hidden"
+						class="move-from-bottom px-[6vw] md:px-[2vw] flex-col w-[90vw] h-[32vh] md:w-[22.8vw] md:h-[47vh] cursor-pointer bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out md:hover:bg-[#7bff71] md:dark:hover:bg-[#43bb47] overflow-hidden"
 					>
 						<h1
-							class="text-[11.5vw] md:text-[4.5vw] mt-[6vh] md:mt-[12.5vh] ml-[-1vw] md:ml-[-0.4vw] transition-all duration-1000 group-hover:opacity-0 group-hover:translate-y-[2vh]"
+							class="text-[11.5vw] md:text-[4.5vw] mt-[6vh] md:mt-[12.5vh] ml-[-1vw] md:ml-[-0.4vw] transition-all duration-1000 md:group-hover:opacity-0 md:group-hover:translate-y-[2vh]"
 						>
 							<Icon icon="mingcute:github-fill" />
 						</h1>
 						<h1
-							class="text-[7.7vw] md:text-[2.7vw] mt-[5.3vh] md:mt-[12.8vh] font-semibold text-start w-[10vw] absolute top-[1.5vh] left-[6vw] md:left-[2vw] opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
+							class="text-[7.7vw] md:text-[2.7vw] mt-[5.3vh] md:mt-[12.8vh] font-semibold text-start w-[10vw] absolute top-[1.5vh] left-[6vw] md:left-[2vw] opacity-0 transition-opacity duration-1000 md:group-hover:opacity-100"
 						>
 							View
 						</h1>
-						<div class="flex flex-row justify-between w-full items-center">
-							<h1 class="text-[7.7vw] md:text-[2.7vw] mt-[1vh] font-semibold text-start w-[10vw]">
+						<div
+							class="flex flex-row justify-between w-full items-center"
+						>
+							<h1
+								class="text-[7.7vw] md:text-[2.7vw] mt-[1vh] font-semibold text-start w-[10vw]"
+							>
 								My Github
 							</h1>
 							<h1
-								class="text-[8vw] md:text-[3vw] transition-transform duration-1000 group-hover:translate-y-[3vh]"
+								class="text-[8vw] md:text-[3vw] transition-transform duration-1000 md:group-hover:translate-y-[3vh]"
 							>
-								<Icon icon="heroicons:arrow-long-right" />
+								<Icon
+									icon="heroicons:arrow-long-right"
+								/>
 							</h1>
 						</div>
 					</div>
@@ -182,21 +210,24 @@
 						<h1
 							class="text-[2.3vw] ml-[10vw] transition-transform duration-1000 group-hover:translate-x-[1rem] group-hover:translate-y-[2rem]"
 						>
-							<Icon icon="fluent:arrow-up-right-24-filled" />
+							<Icon
+								icon="fluent:arrow-up-right-24-filled"
+							/>
 						</h1>
 					</div>
 				</div>
 			</div>
 
 			<div
-				class="move-from-bottom w-[90vw] h-[45vh] md:w-[47vw] md:h-[47vh] flex flex-col items-start gap-[0.5vw] py-[4vh] md:py-[2vh] px-[6vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl relative group transition-colors duration-1000 ease-in-out hover:bg-[#7bff71] dark:hover:bg-[#43bb47] overflow-hidden"
+				class="move-from-bottom w-[90vw] h-[45vh] md:w-[47vw] md:h-[47vh] flex flex-col items-start gap-[0.5vw] py-[4vh] md:py-[2vh] px-[6vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl relative group transition-colors duration-1000 ease-in-out md:hover:bg-[#7bff71] md:dark:hover:bg-[#43bb47] overflow-hidden"
 				on:click={openModal}
-				on:keydown={(e) => e.key === 'Enter' && openModal()}
+				on:keydown={(e) =>
+					e.key === 'Enter' && openModal()}
 				role="button"
 				tabindex="0"
 			>
 				<h1
-					class="text-[4vw] md:text-[1.2vw] mt-[2vw] font-semibold transition-opacity duration-1000 group-hover:opacity-0"
+					class="text-[4vw] md:text-[1.2vw] mt-[2vw] font-semibold transition-opacity duration-1000 md:group-hover:opacity-0"
 				>
 					WHAT I DO
 				</h1>
@@ -204,43 +235,66 @@
 					class="flex flex-col items-start md:flex-row mt-[7vw] md:mt-[1vw] gap-[5vw] md:gap-[0] w-full justify-between"
 				>
 					<div
-						class="flex flex-row-reverse md:flex-col justify-center items-center md:items-center gap-[4vw] md:gap-[2vw] transition-transform duration-1000 group-hover:-translate-y-[8vh]"
+						class="flex flex-row-reverse md:flex-col justify-center items-center md:items-center gap-[4vw] md:gap-[2vw] transition-transform duration-1000 md:group-hover:-translate-y-[8vh]"
 					>
-						<h1 class="text-[5.5vw] md:text-[1.5vw] font-semibold">Sports Research</h1>
+						<h1
+							class="text-[5.5vw] md:text-[1.5vw] font-semibold"
+						>
+							Sports Research
+						</h1>
 						<h1 class="text-[11vw] md:text-[5vw]">
-							<Icon icon="fluent-mdl2:more-sports" />
+							<Icon
+								icon="fluent-mdl2:more-sports"
+							/>
 						</h1>
 					</div>
 					<div
-						class="flex flex-row-reverse md:flex-col justify-center items-center md:items-center gap-[4vw] md:gap-[2vw] transition-transform duration-1000 group-hover:-translate-y-[8vh]"
+						class="flex flex-row-reverse md:flex-col justify-center items-center md:items-center gap-[4vw] md:gap-[2vw] transition-transform duration-1000 md:group-hover:-translate-y-[8vh]"
 					>
-						<h1 class="text-[5.5vw] md:text-[1.5vw] font-semibold">Server-Side Logic</h1>
+						<h1
+							class="text-[5.5vw] md:text-[1.5vw] font-semibold"
+						>
+							Server-Side Logic
+						</h1>
 						<h1 class="text-[11vw] md:text-[5vw]">
-							<Icon icon="carbon:ibm-dynamic-route-server" />
+							<Icon
+								icon="carbon:ibm-dynamic-route-server"
+							/>
 						</h1>
 					</div>
 					<div
-						class="flex flex-row-reverse md:flex-col justify-center items-center md:items-center gap-[4vw] md:gap-[2vw] transition-transform duration-1000 group-hover:-translate-y-[8vh]"
+						class="flex flex-row-reverse md:flex-col justify-center items-center md:items-center gap-[4vw] md:gap-[2vw] transition-transform duration-1000 md:group-hover:-translate-y-[8vh]"
 					>
-						<h1 class="text-[5.5vw] md:text-[1.5vw] font-semibold">Prototyping</h1>
+						<h1
+							class="text-[5.5vw] md:text-[1.5vw] font-semibold"
+						>
+							Prototyping
+						</h1>
 						<h1 class="text-[11vw] md:text-[5vw]">
-							<Icon icon="fluent-mdl2:build-issue" />
+							<Icon
+								icon="fluent-mdl2:build-issue"
+							/>
 						</h1>
 					</div>
 					<h1
-						class="text-[7vw] md:text-[2vw] font-semibold mt-[-3vh] md:mt-[23vh] ml-[65vw] md:ml-[0] transition-transform duration-1000 group-hover:translate-y-4"
+						class="text-[7vw] md:text-[2vw] font-semibold mt-[-3vh] md:mt-[23vh] ml-[65vw] md:ml-[0] transition-transform duration-1000 md:group-hover:translate-y-4"
 					>
-						<Icon icon="hugeicons:arrow-diagonal" />
+						<Icon
+							icon="hugeicons:arrow-diagonal"
+						/>
 					</h1>
 				</div>
 				<h1
-					class="text-[5vw] md:text-[3vw] font-semibold opacity-0 transition-all duration-1000 group-hover:opacity-100 group-hover:-translate-y-[2vh] md:group-hover:-translate-y-[7vh]"
+					class="text-[5vw] md:text-[3vw] font-semibold opacity-0 transition-all duration-1000 md:group-hover:opacity-100 md:group-hover:-translate-y-[7vh]"
 				>
 					See my skills
 				</h1>
 			</div>
 
-			<SkillsModal isOpen={showModal} on:close={closeModal} />
+			<SkillsModal
+				isOpen={showModal}
+				on:close={closeModal}
+			/>
 		{/if}
 	</div>
 

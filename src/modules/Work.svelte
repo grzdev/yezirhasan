@@ -20,7 +20,12 @@
 	let selectedReadTime = 4; // Default slider value
 
 	// Get unique categories, including "All Categories"
-	let categories = ['All', ...Array.from(new Set(work.map((item) => item.category)))];
+	let categories = [
+		'All',
+		...Array.from(
+			new Set(work.map((item) => item.category))
+		)
+	];
 
 	// Toggle category visibility
 	function toggleCategories() {
@@ -29,31 +34,45 @@
 
 	// Set the category filter
 	function filterByCategory(category: string) {
-		selectedCategory = category === 'All' ? null : category; // Clear filter if "All Categories" is selected
+		selectedCategory =
+			category === 'All' ? null : category; // Clear filter if "All Categories" is selected
 	}
 
 	// Filter articles based on selected category and reading time
 	function applyFilters() {
 		filteredWork = work.filter((item) => {
-			const isInCategory = selectedCategory ? item.category === selectedCategory : true;
+			const isInCategory = selectedCategory
+				? item.category === selectedCategory
+				: true;
 			const isInReadingTime =
-				parseInt(item.minread) >= parseInt(minReadTime.toString()) &&
-				parseInt(item.minread) <= parseInt(selectedReadTime.toString());
+				parseInt(item.minread) >=
+					parseInt(minReadTime.toString()) &&
+				parseInt(item.minread) <=
+					parseInt(selectedReadTime.toString());
 			return isInCategory && isInReadingTime;
 		});
 	}
 
 	// Filter articles based on selected category
 	$: filteredWork = selectedCategory
-		? work.filter((item) => item.category === selectedCategory)
+		? work.filter(
+				(item) =>
+					item.category === selectedCategory
+			)
 		: work;
 </script>
 
 <!-- Work page content -->
-<div class="flex justify-center items-center px-[2vw] md:px-[1vw]">
-	<div class="flex flex-col overflow-x-hidden w-full">
+<div
+	class="flex justify-center items-center px-[2vw] md:px-[1vw]"
+>
+	<div
+		class="flex flex-col overflow-x-hidden w-full"
+	>
 		<!-- Featured Work Header -->
-		<div class="flex items-center w-full px-[2vw] md:px-[0.7vw] justify-between">
+		<div
+			class="flex items-center w-full px-[2vw] md:px-[0.7vw] justify-between"
+		>
 			<h2
 				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4.4vw] font-bold text-[#6a6868] dark:text-[#989898] mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
 			>
@@ -66,7 +85,9 @@
 				on:click={toggleCategories}
 				aria-label="Filter work"
 			>
-				<h1 class="text-[white] dark:text-[black] text-[4vw] md:text-[1.6vw]">
+				<h1
+					class="text-[white] dark:text-[black] text-[4vw] md:text-[1.6vw]"
+				>
 					<Icon icon="octicon:filter-16" />
 				</h1>
 			</button>
@@ -81,7 +102,8 @@
 				<div class="flex gap-2 items-center">
 					{#each categories as category}
 						<button
-							on:click={() => filterByCategory(category)}
+							on:click={() =>
+								filterByCategory(category)}
 							class="p-[0.4rem] md:p-2 text-[2.5vw] md:text-[1.1vw] font-semibold transition duration-500 ease-in-out rounded-md transition-all
                 {category === selectedCategory
 								? 'bg-[#3bbb67] dark:bg-[#83ff87] text-[white] dark:text-[black]'
@@ -94,7 +116,9 @@
 				</div>
 
 				<!-- Reading Time Slider -->
-				<div class="flex flex-row gap-4 items-center mr-[-1.3vw] items-start">
+				<div
+					class="flex flex-row gap-4 items-center mr-[-1.3vw] items-start"
+				>
 					<div class="flex gap-4 items-center">
 						<span
 							class="text-[3vw] cursor-pointer md:text-[1.3vw] hover:text-black dark:hover:text-white text-[#6a6868] dark:text-white font-semibold transition duration-500 ease-in-out"
@@ -121,11 +145,16 @@
 		{/if}
 
 		<!-- Work Cards -->
-		<div class="w-full mt-[2vw] md:mt-[0vw] px-[2.5vw] md:px-[1.3vw] ml-[0.5rem]">
+		<div
+			class="w-full mt-[2vw] md:mt-[0vw] px-[2.5vw] md:px-[1.3vw] ml-[0.5rem]"
+		>
 			<div
 				class="move-from-buttom flex flex-row gap-[3vw] md:gap-[2vw] overflow-x-auto overflow-y-hidden custom-scrollbar move-container"
 			>
-				<WorkCard work={filteredWork} data={filteredWork} />
+				<WorkCard
+					work={filteredWork}
+					data={filteredWork}
+				/>
 			</div>
 		</div>
 
@@ -135,7 +164,9 @@
 			>
 				<h2 class=" ">All articles</h2>
 				<h1 class="text-[5vw] md:text-[3vw]">
-					<Icon icon="heroicons:arrow-long-right" />
+					<Icon
+						icon="heroicons:arrow-long-right"
+					/>
 				</h1>
 			</div>
 		</a>
