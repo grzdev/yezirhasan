@@ -35,7 +35,7 @@
 			aria-label="Flip card"
 		>
 			<div
-				class="flip-front px-[2vw] py-[3vw] md:px-[1vw] md:py-[1.2vw] hover:bg-[#ffffff] dark:hover:bg-white transition duration-500 ease-in-out bg-[#f9f9f9] dark:bg-[#e9e9e9] cursor-pointer rounded-md"
+				class="flip-front px-[0.5rem] py-[3vw] md:px-[1vw] md:py-[1.2vw] hover:bg-[#ffffff] dark:hover:bg-white transition duration-500 ease-in-out bg-[#f9f9f9] dark:bg-[#e9e9e9] cursor-pointer rounded-md"
 				style="border-top-left-radius: 0; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem;"
 			>
 				<div

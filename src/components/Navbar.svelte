@@ -88,7 +88,7 @@
 		class="flex flex-row items-center gap-[3vw] hidden md:flex mt-[-1vw]"
 	>
 		<div
-			class="flex flex-row gap-[3vw] text-[1.2vw] font-semibold ml-[5vw]"
+			class="flex flex-row gap-[4rem] text-[1.2vw] font-semibold ml-[5vw]"
 		>
 			<a
 				href="/work"
@@ -104,25 +104,6 @@
 			</a>
 
 			<a
-				href="/about"
-				class={currentPath === '/about'
-					? 'active'
-					: ''}
-			>
-				<h1
-					class="text-[#5e5e5e] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page2"
-				>
-					About
-				</h1>
-			</a>
-
-			<h1
-				class="text-[#5e5e5e] cursor-pointer dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page3"
-			>
-				Resume
-			</h1>
-
-			<a
 				href="/more"
 				class={currentPath === '/more'
 					? 'active'
@@ -134,6 +115,12 @@
 					More
 				</h1>
 			</a>
+
+			<h1
+				class="text-[#5e5e5e] cursor-pointer dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page3"
+			>
+				Resume
+			</h1>
 		</div>
 
 		<div
@@ -163,7 +150,7 @@
 			aria-label="Close"
 		></div>
 		<div
-			class="w-full h-full md:w-64 bg-[#dfdfdf] dark:bg-[black] mt-[1rem]"
+			class="w-full h-full md:w-64 bg-[#E9E9E9] dark:bg-[black]"
 			in:fade={{ duration: 500 }}
 			out:fade={{ duration: 700 }}
 		>
@@ -191,16 +178,7 @@
 					>
 						Work
 					</a>
-					<a
-						href="/about/"
-						class={currentPath === '/about'
-							? 'active text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold'
-							: 'text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold'}
-						in:fly={{ y: 200, duration: 1000 }}
-						out:fly={{ y: 200, duration: 1500 }}
-					>
-						About
-					</a>
+
 					<div
 						class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold"
 						in:fly={{ y: 200, duration: 1300 }}
@@ -220,7 +198,7 @@
 					</a>
 					<a
 						href="/contact/"
-						class="w-[10rem] h-[3rem] bg-[#7c7b7b] dark:bg-[#f4f4f4] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-2xl"
+						class="w-[10rem] h-[3rem] bg-[#3bc26a] dark:bg-[#f4f4f4] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-2xl"
 						in:fly={{ y: 200, duration: 1900 }}
 						out:fly={{ y: 200, duration: 300 }}
 					>
@@ -228,6 +206,9 @@
 							Get in touch
 						</h1>
 					</a>
+					<div class="mt-[6rem]">
+						<ThemeSwitch />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -242,7 +223,6 @@
 	nav a.active,
 	.block a.active {
 		border-bottom: 3px solid #3bc26a; /* Green bottom border */
-		color: #3bc26a !important; /* Make the text green */
 	}
 
 	@keyframes slideFromTop {
