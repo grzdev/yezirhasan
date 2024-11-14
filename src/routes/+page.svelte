@@ -22,7 +22,10 @@
 	<Loader />
 {:else}
 	<div>
-		<Navbar {menuOpen} on:toggleMenu={() => (menuOpen = !menuOpen)} />
+		<Navbar
+			{menuOpen}
+			on:toggleMenu={() => (menuOpen = !menuOpen)}
+		/>
 		<Home />
 		<!-- <Footer /> -->
 	</div>
