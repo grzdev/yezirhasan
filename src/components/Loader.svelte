@@ -2,26 +2,49 @@
 	import { browser } from '$app/environment';
 
 	let darkMode = true;
+	let loaderColor = 'rgba(255, 255, 255, 0.5)';
 
 	if (browser) {
 		if (
 			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			(!('theme' in localStorage) &&
+				window.matchMedia(
+					'(prefers-color-scheme: dark)'
+				).matches)
 		) {
-			document.documentElement.classList.add('dark');
+			document.documentElement.classList.add(
+				'dark'
+			);
 			darkMode = true;
 		} else {
-			document.documentElement.classList.remove('dark');
+			document.documentElement.classList.remove(
+				'dark'
+			);
 			darkMode = false;
 		}
 	}
+
+	$: loaderColor = darkMode
+		? 'rgba(255, 255, 255, 0.5)'
+		: 'rgba(0, 0, 0, 0.5)';
 </script>
 
-<div class="flex w-full h-screen justify-center items-center fade-in">
+<div
+	class="flex w-full h-screen justify-center items-center fade-in"
+>
 	<div class="loader">
-		<span class="bar"></span>
-		<span class="bar"></span>
-		<span class="bar"></span>
+		<span
+			class="bar"
+			style="background-color: {loaderColor};"
+		></span>
+		<span
+			class="bar"
+			style="background-color: {loaderColor};"
+		></span>
+		<span
+			class="bar"
+			style="background-color: {loaderColor};"
+		></span>
 	</div>
 </div>
 
@@ -48,7 +71,6 @@
 		display: inline-block;
 		width: 3px;
 		height: 20px;
-		background-color: rgba(255, 255, 255, 0.5);
 		border-radius: 10px;
 		animation: scale-up4 1s linear infinite;
 	}
@@ -65,7 +87,6 @@
 
 	@keyframes scale-up4 {
 		20% {
-			background-color: #ffff;
 			transform: scaleY(1.5);
 		}
 

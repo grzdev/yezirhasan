@@ -22,13 +22,14 @@
 		class="flex py-[2vw] h-full bg-white px-[3vw] flex-col overflow-x-hidden slide-up-fade-in"
 		transition:fly={{ y: 200, duration: 500 }}
 	>
-		<div
-			class="flex w-full justify-end mb-[1rem]"
-		>
-			<button on:click={closeNews}>
+		<div class="flex mb-[1rem]">
+			<button
+				on:click={closeNews}
+				class="w-[3rem] h-[3rem] bg-black cursor-pointer flex justify-center items-center rounded-full"
+			>
 				<Icon
-					icon="gg:close-o"
-					class="text-[2rem] text-black"
+					icon="ic:sharp-close"
+					class="text-[2rem] md:text-[2rem] text-white"
 				/>
 			</button>
 		</div>
@@ -119,36 +120,31 @@
 			<img
 				src={item.img}
 				alt="news-pic"
-				class="w-full md:w-[50vw] rounded-xl"
+				class="w-full md:w-[60vw] rounded-xl"
 			/>
 			<div
-				class="flex flex-col text-black w-full mt-[7vw] md:mt-[0vw] gap-[7vw] md:gap-[2vw] px-[0vw] md:px-[2vw]"
+				class="flex flex-col justify-center items-center text-black mt-[7vw] md:mt-[0rem] md:gap-[2vw] px-[0vw] md:px-[2vw]"
 			>
 				<div
-					class="w-full h-[full] md:h-[19vw] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
+					class="w-auto md:w-[30rem] h-auto md:h-auto text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
 				>
 					{item.desc1}
-				</div>
-				<div
-					class="w-full text-black h-[full] md:h-[19vw] text-[4vw] md:text-[1.6vw] font-semibold text-start leading-[2.1vw] tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
-				>
-					{item.desc2}
 				</div>
 			</div>
 		</div>
 
 		<div
-			class="flex flex-col md:flex-row w-full gap-[7vw] md:gap-[2vw] mt-[8vw] md:mt-[7vw] mb-[5vw]"
+			class="flex flex-col md:flex-row w-full gap-[7vw] md:gap-[2vw] mt-[8vw] md:mt-[5vw] mb-[5vw]"
 		>
 			<div
-				class="w-full h-[full] text-black md:h-[21vw] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
+				class="w-full h-[full] text-black md:h-[auto] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
 			>
-				{item.desc3}
+				{item.desc2}
 			</div>
 			<div
-				class="w-full h-[full] text-black md:h-[21vw] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
+				class="w-full h-[full] text-black md:h-[auto] text-[4vw] md:text-[1.6vw] font-semibold text-start tracking-wide md:tracking-light leading-[5.5vw] md:leading-[2.2vw]"
 			>
-				{item.desc4}
+				{item.desc3}
 			</div>
 		</div>
 

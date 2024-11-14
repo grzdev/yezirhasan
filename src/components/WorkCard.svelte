@@ -46,7 +46,7 @@
 					class="flex flex-row items-center w-full justify-between"
 				>
 					<div
-						class="w-[10vw] md:w-[3.5vw] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
+						class="w-[15vw] md:w-[3.5vw] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
 					/>
 					<h1
 						class="text-[5vw] md:text-[1.9vw] font-bold text-[black] flex flex-start noticia-text-regular-italic"
@@ -54,7 +54,7 @@
 						Sport Mania
 					</h1>
 					<div
-						class="w-[10vw] md:w-[3.5vw] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
+						class="w-[15vw] md:w-[3.5vw] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
 					/>
 				</div>
 
@@ -63,7 +63,7 @@
 				/>
 
 				<div
-					class="flex flex-row gap-[1.5vw] md:gap-[0.7vw] mt-[2.5vw] md:mt-[1.5vw]"
+					class="flex flex-row gap-[1.5vw] md:gap-[0.7vw] mt-[4vw] md:mt-[1.5vw]"
 				>
 					<img
 						src={work.img}
@@ -75,7 +75,7 @@
 						class="mt-[-1vw] flex flex-col gap-[2vw] md:gap-[2vw]"
 					>
 						<h1
-							class="text-wrap font-bold tracking-wide h-[4vw] text-[black] mt-[1vw] md:mt-[0.5vw] text-start text-[3vw] md:text-[1.2vw] leading-5 md:leading-6 lg:md:leading-6"
+							class="text-wrap font-bold tracking-wide h-[4vw] text-[black] mt-[1vw] md:mt-[0.5vw] text-start text-[4vw] md:text-[1.2vw] leading-5 md:leading-6 lg:md:leading-6"
 						>
 							{work.topic}
 						</h1>
@@ -97,14 +97,14 @@
 				</div>
 
 				<div
-					class="flex flex-row mt-[3vw] md:mt-[0.8vw] items-center justify-between"
+					class="flex flex-row mt-[4vw] md:mt-[0.8vw] items-center justify-between"
 				>
 					<div
 						class="w-[40vw] md:w-[15vw] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
 					/>
 
 					<h1
-						class="text-[2.6vw] w-[16vw] md:w-[7vw] text-white h-[4vw] md:h-[2vw] rounded-md flex justify-center items-center md:text-[1.1vw] font-bold"
+						class="text-[2.6vw] w-[20vw] md:w-[7vw] text-white h-[5vw] md:h-[2vw] rounded-md flex justify-center items-center md:text-[1.1vw] font-bold"
 						style="background-color: {work.category ===
 						'Football'
 							? '#019334'
@@ -126,19 +126,19 @@
 					class="flex flex-row justify-between items-center w-full px-[2vw] md:px-[1vw]"
 				>
 					<h1
-						class="text-[3.2vw] md:text-[1.3vw] font-semibold noticia-text-regular"
+						class="text-[4vw] md:text-[1.3vw] font-semibold noticia-text-regular"
 					>
 						{work.datePosted}
 					</h1>
 					<h1
-						class="text-[3.2vw] md:text-[1.3vw] font-semibold noticia-text-regular"
+						class="text-[4vw] md:text-[1.3vw] font-semibold noticia-text-regular"
 					>
 						{work.minread} read
 					</h1>
 				</div>
 				<div class="flex flex-col">
 					<p
-						class="truncate text-[3.2vw] md:text-[1.3vw] w-[12rem] md:w-[16rem] noticia-text-regular"
+						class="truncate text-[4vw] md:text-[1.3vw] w-[12rem] md:w-[16rem] noticia-text-regular"
 					>
 						{work.desc1}
 					</p>
@@ -159,7 +159,7 @@
 
 				<a href="/news/{work.id}">
 					<h1
-						class="noticia-text-regular-italic mt-[0.5rem] md:mt-[0] text-[3.2vw] md:text-[1.3vw] font-semibold decoration-solid"
+						class="noticia-text-regular-italic mt-[0.5rem] md:mt-[0] text-[4vw] md:text-[1.3vw] font-semibold decoration-solid"
 					>
 						Open article →
 					</h1>
@@ -196,8 +196,8 @@
 
 	@media (max-width: 640px) {
 		.flip-card {
-			width: 65vw;
-			height: 42vw;
+			width: 75vw;
+			height: 47vw;
 		}
 	}
 
