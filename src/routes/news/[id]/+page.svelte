@@ -2,6 +2,12 @@
 	import Icon from '@iconify/svelte';
 	import { fly } from 'svelte/transition';
 	import { goto } from '$app/navigation';
+	import team1 from '../../../image/team1.png';
+	import team2 from '../../../image/team2.png';
+	import team3 from '../../../image/team3.png';
+	import team4 from '../../../image/team4.png';
+	import team7 from '../../../image/team7.png';
+	import team6 from '../../../image/team6.png';
 
 	export let data;
 	const { item } = data;
@@ -193,9 +199,80 @@
 			/>
 
 			<div
-				class="w-full h-[13rem] md:h-[20rem] rounded-bl-[0.8rem] rounded-br-[0.8rem] bg-[#000048]"
-				style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-			></div>
+				class="w-full h-[15rem] md:h-[20rem] flex flex-row md:flex-row gap-[1rem] md:gap-[4rem] justify-start items-center px-[1rem] md:px-[5rem] rounded-bl-[0.8rem] rounded-br-[0.8rem]"
+				style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; background: linear-gradient(90deg, rgba(22,85,184,1) 21%, rgba(13,0,118,1) 82%);"
+			>
+				<div
+					class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.2rem] mt-[1rem] md:mt-[0rem]"
+				>
+					<div
+						class="flex flex-row w-[7rem] md:w-[16rem] items-center justify-between"
+					>
+						<img
+							src={team3}
+							alt=""
+							class="w-[2rem] h-[2rem] md:w-[4rem] md:h-[4rem]"
+						/>
+						<h1
+							class="text-white text-[1rem] md:text-[1.5rem] font-semibold noticia-text-regular-italic"
+						>
+							VS
+						</h1>
+						<img
+							src={team4}
+							alt=""
+							class="w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] mt-[-0.5rem] md:mt-[0rem]"
+						/>
+					</div>
+					<div
+						class="flex flex-row w-[10rem] md:w-[25rem] items-center justify-between"
+					>
+						<img
+							src={team1}
+							alt=""
+							class="w-[3rem] h-[3rem] md:w-[6rem] md:h-[6rem]"
+						/>
+						<h1
+							class="text-white text-[1.2rem] md:text-[2rem] font-semibold noticia-text-regular-italic"
+						>
+							VS
+						</h1>
+						<img
+							src={team2}
+							alt=""
+							class="w-[3rem] h-[3rem] md:w-[7rem] md:h-[7rem]"
+						/>
+					</div>
+					<div
+						class="flex flex-row w-[7rem] md:w-[16rem] items-center justify-between mr-[1.3rem] md:mr-[2rem]"
+					>
+						<img
+							src={team7}
+							alt=""
+							class="w-[2.6rem] h-[2.6rem] md:w-[4.5rem] md:h-[4.5rem]"
+						/>
+						<h1
+							class="text-white text-[1rem] md:text-[1.5rem] font-semibold noticia-text-regular-italic"
+						>
+							VS
+						</h1>
+						<img
+							src={team6}
+							alt=""
+							class="w-[2rem] h-[2rem] md:w-[4rem] md:h-[4rem] mr-[-1rem] md:mr-[0rem]"
+						/>
+					</div>
+				</div>
+				<h1
+					class="text-start text-[1rem] md:text-[2.5rem] font-bold text-white leading-[1.7rem] md:leading-[3rem]"
+				>
+					PREDICT THE 2025 UCL FINAL AND WIN <span
+						class="text-[#d22dff]"
+						>2 VIP TICKETS</span
+					>
+					TO WATCH IT LIVE AT THE ALLIANZ ARENA
+				</h1>
+			</div>
 		</div>
 	</div>
 {/if}
@@ -236,20 +313,22 @@
 		}
 	}
 
-	/* @keyframes slideUpFadeIn {
+	.noticia-text-regular-italic {
+		font-family: 'Noticia Text', serif;
+		font-weight: 600;
+		font-style: italic;
+	}
+
+	@keyframes slideUpFadeIn {
 		0% {
-			transform: translateY(
-				100%
-			); 
-			opacity: 0; 
+			transform: translateY(100%);
+			opacity: 0;
 		}
 		100% {
-			transform: translateY(
-				0
-			); 
-			opacity: 1; 
+			transform: translateY(0);
+			opacity: 1;
 		}
-	} */
+	}
 
 	.slide-up-fade-in {
 		animation: slideUpFadeIn 1s ease-out; /* Apply animation */
