@@ -76,7 +76,7 @@
 		class="flex links-to-pages flex-col md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[6vh] md:mt-[9vh]"
 	>
 		{#if cardVisible}
-			<a href="/about/">
+			<a href="/more/">
 				<div
 					class="move-from-bottom w-[90vw] h-[32vh] md:w-[47vw] md:h-[42vh] cursor-pointer px-[5vw] md:px-[2vw] bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out md:hover:bg-[#7bff71] md:dark:hover:bg-[#43bb47] overflow-hidden"
 				>
