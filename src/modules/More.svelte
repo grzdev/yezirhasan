@@ -23,24 +23,23 @@
 	</div>
 
 	<div
-		class="w-full h-[3rem] mt-[3rem] md:mt-[2rem] md:h-[5.5svw] overflow-hidden flex items-center"
-		style="background: rgb(56,139,59); background: linear-gradient(90deg, rgba(56,139,59,1) 0%, rgba(67,187,71,1) 70%);"
+		class="w-full h-[3rem] mt-[3rem] bg-[#757575] md:mt-[5 rem] md:h-[5.5svw] overflow-hidden flex items-center"
 	>
 		<div class="marquee-wrapper">
 			<h1
-				class="text-[2.7rem] md:text-[4rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
+				class="text-[2.7rem] md:text-[4.5rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
 				style="transform: scaleY(1.3);"
 			>
 				SPORT JOURNALIST
 			</h1>
 			<h1
-				class="text-[2.7rem] md:text-[4rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
+				class="text-[2.7rem] md:text-[4.5rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
 				style="transform: scaleY(1.3);"
 			>
 				BACKEND DEVELOPER
 			</h1>
 			<h1
-				class="text-[2.7rem] md:text-[4rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
+				class="text-[2.7rem] md:text-[4.5rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
 				style="transform: scaleY(1.3);"
 			>
 				CREATIVE MANAGER
