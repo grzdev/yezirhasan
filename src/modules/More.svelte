@@ -23,7 +23,7 @@
 	</div>
 
 	<div
-		class="w-full h-[5.5rem] mt-[5rem] bg-[#cecece] dark:bg-[#1d1d1e] md:mt-[5rem] md:h-[6rem] overflow-hidden flex items-center"
+		class="w-full h-[5.3rem] mt-[5rem] bg-[#cecece] dark:bg-[#1d1d1e] md:mt-[5rem] md:h-[6rem] overflow-hidden flex items-center"
 	>
 		<div class="marquee-wrapper">
 			<h1
