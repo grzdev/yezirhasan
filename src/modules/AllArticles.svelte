@@ -75,7 +75,7 @@
 				/>
 			</h1>
 			<h1
-				class="text-[7vw] ml-[3vw] w-full md:text-[2vw] font-semibold"
+				class="text-[7vw] ml-[3vw] md:ml-[1rem] w-full md:text-[2vw] font-semibold"
 			>
 				All Articles
 			</h1>

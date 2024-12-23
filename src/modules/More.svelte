@@ -23,23 +23,23 @@
 	</div>
 
 	<div
-		class="w-full h-[3rem] mt-[3rem] bg-[#757575] md:mt-[5 rem] md:h-[5.5svw] overflow-hidden flex items-center"
+		class="w-full h-[5.5rem] mt-[5rem] bg-[#cecece] dark:bg-[#1d1d1e] md:mt-[5rem] md:h-[6rem] overflow-hidden flex items-center"
 	>
 		<div class="marquee-wrapper">
 			<h1
-				class="text-[2.7rem] md:text-[4.5rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
+				class="text-[4.3rem] md:text-[5rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 				style="transform: scaleY(1.3);"
 			>
-				SPORT JOURNALIST
+				SPORTS JOURNALIST
 			</h1>
 			<h1
-				class="text-[2.7rem] md:text-[4.5rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
+				class="text-[4.3rem] md:text-[5rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 				style="transform: scaleY(1.3);"
 			>
 				BACKEND DEVELOPER
 			</h1>
 			<h1
-				class="text-[2.7rem] md:text-[4.5rem] font-bold text-[#ebebeb] dark:text-black tracking-tighter marquee-content"
+				class="text-[4.3rem] md:text-[5rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 				style="transform: scaleY(1.3);"
 			>
 				CREATIVE MANAGER
@@ -47,7 +47,17 @@
 		</div>
 	</div>
 
-	<ThemeSwitch />
+	<div class="mt-[5rem]">
+		<h2
+			class="move-from-buttom cursor-pointer bg-gradient-to-r from-[#989898] via-[#bbbbbb] to-[#cdcdcd] bg-clip-text text-transparent text-[7vw] md:text-[4.4vw] font-bold mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
+		>
+			My Protoypes
+		</h2>
+	</div>
+
+	<div class="mt-[5rem] mb-[3rem]">
+		<ThemeSwitch />
+	</div>
 </div>
 
 <style>
