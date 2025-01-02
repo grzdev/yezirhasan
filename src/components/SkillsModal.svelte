@@ -86,7 +86,7 @@
 	></button>
 
 	<div
-		class="modal-content w-[90vw] border-2 dark:border-[#c2c3c2] px-[1.2rem] py-[2rem] md:px-[1.7rem] md:py-[3rem] h-[136vw] md:w-[45vw] md:h-[40vw] text-black dark:text-[#c2c3c2] bg-[#cdcdcd] dark:bg-black"
+		class="modal-content w-[90vw] border-2 dark:border-[#c2c3c2] px-[1.2rem] py-[2rem] md:px-[1.7rem] md:py-[3rem] h-[136vw] md:w-[45vw] md:h-[37rem] text-black dark:text-[#c2c3c2] bg-[#cdcdcd] dark:bg-black"
 		transition:fade={{ duration: 400 }}
 	>
 		<button

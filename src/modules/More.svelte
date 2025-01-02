@@ -2,6 +2,8 @@
 	import { fade } from 'svelte/transition';
 	import Yezir from '../image/yezir.png';
 	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
+	import bg from '../image/moreBg.png';
+	import SounwaveVideo from '../image/sounwave.mp4';
 </script>
 
 <div
@@ -47,15 +49,30 @@
 		</div>
 	</div>
 
-	<div class="mt-[5rem]">
+	<div
+		class=" h-[60rem] w-full flex flex-col items-start p-[2rem] mt-[4rem]"
+	>
 		<h2
 			class="move-from-buttom cursor-pointer bg-gradient-to-r from-[#989898] via-[#bbbbbb] to-[#cdcdcd] bg-clip-text text-transparent text-[7vw] md:text-[4.4vw] font-bold mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
 		>
 			My Protoypes
 		</h2>
+
+		<div class="flex flex-col">
+			<div
+				class="w-[70rem] h-[40rem] rounded-2xl bg-white opacity-70 dark:bg-gray-800 dark:opacity-70 mt-[2rem] flex items-center justify-center"
+			></div>
+		</div>
+		<video
+			src={SounwaveVideo}
+			loop
+			autoplay
+			muted
+			class="w-[20rem] h-[20rem] rounded-full"
+		></video>
 	</div>
 
-	<div class="mt-[5rem] mb-[3rem]">
+	<div class="">
 		<ThemeSwitch />
 	</div>
 </div>
