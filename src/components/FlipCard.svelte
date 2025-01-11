@@ -41,6 +41,7 @@
 					muted
 					playsinline
 					disablePictureInPicture
+					preload="auto"
 					class="w-[5rem] h-[5rem] md:w-[7rem] md:h-[7rem] rounded-full"
 				></video>
 				<h1
