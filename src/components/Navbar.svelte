@@ -179,23 +179,23 @@
 						Work
 					</a>
 
-					<div
-						class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold"
-						in:fly={{ y: 200, duration: 1300 }}
-						out:fly={{ y: 200, duration: 1000 }}
-					>
-						Resume
-					</div>
 					<a
 						href="/more/"
 						class={currentPath === '/more'
 							? 'active text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold'
 							: 'text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold'}
-						in:fly={{ y: 200, duration: 1600 }}
+						in:fly={{ y: 200, duration: 1300 }}
 						out:fly={{ y: 200, duration: 1000 }}
 					>
 						More
 					</a>
+					<div
+						class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold"
+						in:fly={{ y: 200, duration: 1600 }}
+						out:fly={{ y: 200, duration: 1000 }}
+					>
+						Resume
+					</div>
 					<a
 						href="/contact/"
 						class="w-[10rem] h-[3rem] bg-[#3bc26a] dark:bg-[#f4f4f4] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-2xl"
@@ -206,7 +206,11 @@
 							Get in touch
 						</h1>
 					</a>
-					<div class="mt-[6rem]">
+					<div
+						class="mt-[6rem]"
+						in:fly={{ y: 200, duration: 1900 }}
+						out:fly={{ y: 200, duration: 300 }}
+					>
 						<ThemeSwitch />
 					</div>
 				</div>

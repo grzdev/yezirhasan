@@ -55,13 +55,13 @@
 		class="h-[80rem] md:h-[90rem] w-full bg-[#cecece] dark:bg-[#1d1d1e] flex flex-col items-center p-[2rem]"
 	>
 		<h2
-			class="cursor-pointer text-[white] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[2rem] md:mt-[4rem]"
+			class="cursor-pointer text-[white] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[3rem] md:mt-[4rem]"
 		>
 			My Prototypes
 		</h2>
 
 		<div
-			class="flex flex-col gap-[4rem] md:gap-[6rem] mt-[2rem]"
+			class="flex flex-col gap-[4rem] md:gap-[6rem] mt-[1rem] md:mt-[2rem]"
 		>
 			<!-- Flip Cards -->
 			<FlipCard
@@ -70,7 +70,7 @@
 				title="sounwave."
 				description="a site for music lovers and nerds that want to know and learn about what they listen to."
 				about="a page that helps you check how well you
-				listen to music, shows you songs you can’t
+				listen to music. <br/><br/> shows you songs you can’t
 				do without, producers and writers of your
 				fav song and artists that rock your world. <br/><br/>
 				all that data plus more to make you appreciate

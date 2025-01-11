@@ -52,7 +52,7 @@
 			</div>
 
 			<p
-				class="text-[1.1rem] md:text-[1.4rem] w-[18rem] md:w-[35rem] mt-[2.5rem] text-white font-bold tracking-wide opacity-70"
+				class="text-[1.1rem] md:text-[1.4rem] w-[16rem] md:w-[35rem] mt-[2.5rem] text-white font-bold tracking-wide opacity-70"
 			>
 				{description}
 				<span
