@@ -42,10 +42,10 @@
 					playsinline
 					disablePictureInPicture
 					preload="auto"
-					class="w-[5rem] h-[5rem] md:w-[7rem] md:h-[7rem] rounded-full"
+					class="w-[4.6rem] h-[4.6rem] md:w-[7rem] md:h-[7rem] rounded-full"
 				></video>
 				<h1
-					class="text-[2.3rem] md:text-[5rem] mt-[0.6rem] md:mt-[-1rem] font-bold text-white cursor-pointer opacity-70"
+					class="text-[2.1rem] md:text-[5rem] mt-[0.6rem] md:mt-[-1rem] font-bold text-white cursor-pointer opacity-70"
 				>
 					{title}
 				</h1>

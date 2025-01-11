@@ -197,7 +197,7 @@
 	@media (max-width: 640px) {
 		.flip-card {
 			width: 75vw;
-			height: 47vw;
+			height: 11.5rem;
 		}
 	}
 

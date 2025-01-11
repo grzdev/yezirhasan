@@ -5,6 +5,7 @@
 	import Yezir from '../image/yezir.png';
 	import newspaper from '../image/np3.png';
 	import SkillsModal from '../components/SkillsModal.svelte';
+	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
 
 	let headersVisible = [false, false, false];
 	let cardVisible = false;
@@ -305,11 +306,7 @@
 		>
 			<Icon icon="fluent:mail-add-20-filled" />
 		</h1>
-		<h1
-			class="text-[11vw] md:text-[3vw] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[#6a6868] dark:text-[#989898]"
-		>
-			<Icon icon="devicon-plain:linkedin" />
-		</h1>
+		<ThemeSwitch />
 	</div>
 </div>
 

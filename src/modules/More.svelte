@@ -55,7 +55,7 @@
 		class="h-[80rem] md:h-[90rem] w-full bg-[#cecece] dark:bg-[#1d1d1e] flex flex-col items-center p-[2rem]"
 	>
 		<h2
-			class="cursor-pointer text-[white] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[3rem] md:mt-[5rem]"
+			class="cursor-pointer text-[white] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[5rem] md:mt-[5rem]"
 		>
 			My Prototypes
 		</h2>
