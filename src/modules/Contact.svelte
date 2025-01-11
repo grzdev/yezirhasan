@@ -3,7 +3,7 @@
 	import Logo from '../image/logo5.png';
 	import LogoDark2 from '../image/logo1.png';
 	import CourtBg from '../image/pitch6.jpeg';
-	import bg from '../image/cardBg3.jpeg';
+	import bg from '../image/cardbg3.jpeg';
 
 	let flippedContactCard = false;
 
