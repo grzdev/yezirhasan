@@ -4,6 +4,7 @@
 	import LogoDark2 from '../image/logo1.png';
 	import CourtBg from '../image/pitch6.jpeg';
 	import bg from '../image/cardbg3.jpeg';
+	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
 
 	let flippedContactCard = false;
 
@@ -16,13 +17,13 @@
 	class="flex items-center justify-center flex-col"
 >
 	<h2
-		class="mt-[1rem] cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[2.6rem] font-bold text-[#6a6868] dark:text-[#989898]"
+		class="mt-[6rem] md:mt-[0rem] cursor-pointer text-[#6a6868] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2rem] md:text-[4rem] font-bold"
 	>
-		lets make something amazing...
+		Contact Card
 	</h2>
 
 	<div
-		class="flip-container move-container mt-[2vw]"
+		class="flip-container move-container mt-[2rem] md:mt-[2vw]"
 		role="button"
 		tabindex="0"
 		aria-label="Flip contact card"
@@ -32,16 +33,16 @@
 		}}
 	>
 		<div
-			class="flip-card"
+			class="flip-card w-[18rem] h-[10rem] md:w-[40rem] md:h-[22rem]"
 			class:flipped={flippedContactCard}
 		>
 			<!-- Front side -->
 			<div
-				class="flip-front w-[45vw] h-[25vw] flex items-center justify-center px-[1vw] py-[1vw] bg-cover bg-center rounded-2xl transition-opacity duration-500 ease-in-out opacity-80 hover:opacity-100 bg-[#e9e9e9] dark:bg-black dark:shadow-[rgba(0,0,0,0.15)_0px_15px_25px,_rgba(0,0,0,0.05)_0px_5px_10px]"
+				class="flip-front w-[45vw] h-[25vw] flex items-center justify-center px-[1vw] py-[1vw] bg-cover bg-center rounded-2xl transition-opacity duration-500 ease-in-out opacity-100 md:opacity-80 md:hover:opacity-100 bg-[#e9e9e9] dark:bg-black dark:shadow-[rgba(0,0,0,0.15)_0px_15px_25px,_rgba(0,0,0,0.05)_0px_5px_10px]"
 				style="background-image: url({CourtBg}); box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;"
 			>
 				<h1
-					class="text-[2vw] ml-[2.8vw] text-white font-bold tracking-[1vw]"
+					class="text-[1.1rem] md:text-[2vw] ml-[2.8vw] text-white font-bold tracking-[1vw]"
 				>
 					YEZIR HASSAN
 				</h1>
@@ -54,6 +55,10 @@
 			></div>
 		</div>
 	</div>
+
+	<div class="mt-[5rem]">
+		<ThemeSwitch />
+	</div>
 </div>
 
 <style>
@@ -63,8 +68,6 @@
 
 	.flip-card {
 		position: relative;
-		width: 45vw;
-		height: 25vw;
 		transition: transform 0.5s;
 		transform-style: preserve-3d;
 		cursor: pointer;

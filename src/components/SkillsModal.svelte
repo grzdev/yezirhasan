@@ -63,7 +63,7 @@
 					icon: 'fluent-mdl2:build-issue'
 				},
 				{
-					name: 'Content Strategy',
+					name: 'Content Creation',
 					icon: 'carbon:content-view'
 				},
 				{

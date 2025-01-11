@@ -16,7 +16,7 @@
 </script>
 
 <div
-	class="flip-container w-[20rem] h-[30rem] md:w-[60rem] md:h-[30rem]"
+	class="flip-container w-[20rem] h-[27rem] md:w-[60rem] md:h-[30rem]"
 	role="button"
 	tabindex="0"
 	aria-label="Flip card"
