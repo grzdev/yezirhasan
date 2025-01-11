@@ -39,6 +39,8 @@
 					loop
 					autoplay
 					muted
+					playsinline
+					disablePictureInPicture
 					class="w-[5rem] h-[5rem] md:w-[7rem] md:h-[7rem] rounded-full"
 				></video>
 				<h1
@@ -65,7 +67,7 @@
 					<span
 						><Icon
 							icon="mingcute:eye-line"
-							class="text-[2rem]"
+							class="text-[1.3rem] md:text-[2rem]"
 						/></span
 					>
 					<span></span>
@@ -74,7 +76,7 @@
 					<span
 						><Icon
 							icon="bx:git-repo-forked"
-							class="text-[2rem]"
+							class="text-[1.3rem] md:text-[2rem]"
 						/></span
 					>
 					<span></span>
@@ -141,11 +143,11 @@
 	.animated-button {
 		position: relative;
 		display: inline-block;
-		padding: 12px 24px;
+		padding: 8px 16px; /* Adjusted for mobile */
 		border: none;
-		font-size: 16px;
+		font-size: 14px; /* Adjusted for mobile */
 		background-color: inherit;
-		border-radius: 100px;
+		border-radius: 50px; /* Adjusted for mobile */
 		font-weight: 600;
 		color: #ffffff9c;
 		box-shadow: 0 0 0 2px #ffffff9c;
@@ -153,6 +155,14 @@
 		overflow: hidden;
 		transition: all 0.6s
 			cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	@media (min-width: 768px) {
+		.animated-button {
+			padding: 12px 24px; /* Original size for desktop */
+			font-size: 16px; /* Original size for desktop */
+			border-radius: 100px; /* Original size for desktop */
+		}
 	}
 
 	.animated-button span:last-child {
