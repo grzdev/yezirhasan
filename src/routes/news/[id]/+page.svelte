@@ -82,7 +82,7 @@
 				<h1
 					class="text-[3vw] text-black md:text-[1.3vw] font-bold"
 				>
-					₦199.99
+					₦499.99
 				</h1>
 				<h1
 					class="text-[3vw] text-black md:text-[1.3vw] font-bold"

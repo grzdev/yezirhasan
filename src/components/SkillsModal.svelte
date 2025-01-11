@@ -35,10 +35,10 @@
 		{
 			title: 'Backend Developer',
 			skills: [
-				{
-					name: 'Server-Side Logic',
-					icon: 'carbon:ibm-dynamic-route-server'
-				},
+				// {
+				// 	name: 'Server-Side Logic',
+				// 	icon: 'carbon:ibm-dynamic-route-server'
+				// },
 				{
 					name: 'Chatbot Integration',
 					icon: 'carbon:bot'
@@ -46,10 +46,13 @@
 				{
 					name: 'API Development',
 					icon: 'carbon:api'
-				}
+				},
 				// { name: 'Database Management', icon: 'carbon:data-table' },
 				// { name: 'Security and Authentication', icon: 'carbon:lock' },
-				// { name: 'Performance Optimization', icon: 'carbon:performance' },
+				{
+					name: 'Performance Optimization',
+					icon: 'eos-icons:performance'
+				}
 			]
 		},
 		{

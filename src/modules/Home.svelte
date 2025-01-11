@@ -254,12 +254,10 @@
 						<h1
 							class="text-[5.5vw] md:text-[1.5vw] font-semibold"
 						>
-							Server-Side Logic
+							Chatbot Integration
 						</h1>
 						<h1 class="text-[11vw] md:text-[5vw]">
-							<Icon
-								icon="carbon:ibm-dynamic-route-server"
-							/>
+							<Icon icon="carbon:bot" />
 						</h1>
 					</div>
 					<div

@@ -1,124 +1,58 @@
 {
-    "work":[
-        {
-            "id": 1,
-            "img": "https://i.pinimg.com/564x/d8/b0/0e/d8b00e9ab9a702f4e5f7ee94c3ba0c85.jpg",
-            "topic": "EURO24 Power Rankings",
-            "category": "Football",
-            "minread": "5 mins",
-            "datePosted": "Dec 23",
-            "desc": "The dust has settled, the qualifiers are complete, and Europe's best have staked their claim for Euro 2024 glory in Germany...",
-            "link": "https://paper.wf/zir/euro24-power-rankings"
-        },
-        {
-            "id": 2,
-            "img": "https://i.pinimg.com/736x/16/ef/1a/16ef1a2c7d920719cd4585c43f2ac4a6.jpg",
-            "topic": "Jude Bellingham: Real Madrid's New Zidane?",
-            "category": "Football",
-            "minread": "4 mins",
-            "datePosted": "Nov 15",
-            "desc": "Watching the young, wiry figure of Jude Bellingham glide across the pitch with the same effortless grace and poise once witnessed in...",
-            "link": "https://paper.wf/zir/jude-bellingham-real-madrids-new-zidane"
-        },
-        {
-            "id": 3,            
-            "img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
-            "topic": "Can the Celtics make it to the EC finals? ",
-            "category": "NBA",
-            "minread": "5 mins",
-            "datePosted": "Nov 5",
-            "desc": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record...",
-            "link": "https://paper.wf/zir/are-the-celtics-a-lock-to-make-it-into-the-eastern-conference-finals"
-        },
-        {
-            "id": 4,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 1",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        },
-        {
-            "id": 5,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 8",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        },
-        {
-            "id": 6,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 2",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        },
-        {
-            "id": 7,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 4",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        },
-        {
-            "id": 8,            
-            "img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
-            "topic": "Can the Celtics make it to the EC finals? ",
-            "category": "NBA",
-            "minread": "5 mins",
-            "datePosted": "Nov 5",
-            "desc": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record...",
-            "link": "https://paper.wf/zir/are-the-celtics-a-lock-to-make-it-into-the-eastern-conference-finals"
-        },
-        {
-            "id": 9,            
-            "img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
-            "topic": "Can the Celtics make it to the EC finals? ",
-            "category": "NBA",
-            "minread": "5 mins",
-            "datePosted": "Nov 5",
-            "desc": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record...",
-            "link": "https://paper.wf/zir/are-the-celtics-a-lock-to-make-it-into-the-eastern-conference-finals"
-        },
-        {
-            "id": 10,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 1",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        },
-        {
-            "id": 11,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 1",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        },
-        {
-            "id": 12,
-            "img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
-            "topic": "The Playoffs Picture",
-            "category": "NFL",
-            "minread": "6 mins",
-            "datePosted": "Jan 1",
-            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl...",
-            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
-        }
-    ]
+	"work": [
+		{
+			"id": 1,
+			"img": "https://i.pinimg.com/736x/a9/49/4c/a9494cb449757053188fd0d0b3b83b37.jpg",
+			"topic": "Can the Bucks Achieve the Double?",
+			"category": "NBA",
+			"minread": "4 mins",
+			"datePosted": "10th Jan 2025",
+			"desc1": " The NBA Cup, introduced in the 2023 season as a mid-season tournament, was designed to inject excitement into the league and provide teams with an additional title to pursue. Its arrival has opened the door for an unprecedented accomplishment: winning both the NBA Cup and the NBA Championship in the same season—a feat now referred to as 'the double.'"
+		},
+		{
+			"id": 2,
+			"img": "https://i.pinimg.com/736x/62/88/ea/6288eae4ae096d92ae5dd7d6ba478b5e.jpg",
+			"topic": "The Viewership War: Part 1",
+			"category": "NFL",
+			"minread": "8 mins",
+			"datePosted": "8th Jan 2025",
+			"desc1": "The United States is one of the most lucrative sports markets in the world, a place where billion-dollar television deals, packed stadiums, and thriving merchandise sales make sports an integral part of the cultural and economic fabric. This makes the battle for viewership and market dominance not just a game, but a high-stakes contest that defines the future of sports."
+		},
+		{
+			"id": 3,
+			"img": "https://i.pinimg.com/736x/16/ef/1a/16ef1a2c7d920719cd4585c43f2ac4a6.jpg",
+			"topic": "Jude Bellingham: Real Madrid's New Zidane?",
+			"category": "Football",
+			"minread": "4 mins",
+			"datePosted": "15th Nov 2023",
+			"desc1": "Watching the young, wiry figure of Jude Bellingham glide across the pitch with the same effortless grace and poise once witnessed in the great Zinedine Zidane, a wave of nostalgia washes over me. The long-sleeved shirt, the Adidas predator boots, and the jersey number 5 are not mere accessories but symbols of a bygone era, a time when football was played with an artistry that seems almost lost in today's high-octane, physically demanding game."
+		},
+		{
+			"id": 4,
+			"img": "https://i.pinimg.com/564x/d8/b0/0e/d8b00e9ab9a702f4e5f7ee94c3ba0c85.jpg",
+			"topic": "The EURO24 Power Rankings",
+			"category": "Football",
+			"minread": "5 mins",
+			"datePosted": "23rd Dec 2023",
+			"desc1": "The dust has settled, the qualifiers are complete, and Europe's best have staked their claim for Euro 2024 glory in Germany. Familiar faces have impressed, rising stars have emerged, and a few legendary giants remain on the watchlist. But who will truly shine on Europe's biggest stage?"
+		},
+		{
+			"id": 5,
+			"img": "https://i.pinimg.com/736x/b8/aa/55/b8aa555eabcc67b4bea90a135f0f5f58.jpg",
+			"topic": "Can the Celtics make it to the EC finals? ",
+			"category": "NBA",
+			"minread": "5 mins",
+			"datePosted": "5th Nov 2023",
+			"desc1": "The Boston Celtics are up and running this season, sitting atop the Eastern Conference with a 9-2 record. Their impressive start comes despite the loss of key players like Marcus Smart and Robert Williams in the offseason. The Celtics' success is due in large part to how quickly the new additions Kristaps Porzingis and Jrue Holiday have settled into the team.  Porzingis has been a force in the paint, averaging 19.7 points and 6.2 rebounds per game. Holiday has been a leadership presence at point guard, averaging 13.4 points and 5.3 assists per game."
+		},
+		{
+			"id": 6,
+			"img": "https://i.pinimg.com/736x/fc/85/e6/fc85e6a45a74e2358612c097daddd08c.jpg",
+			"topic": "The Playoffs Picture in 2023",
+			"category": "NFL",
+			"minread": "6 mins",
+			"datePosted": "1st Jan 2023",
+			"desc1": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl. The San Francisco 49ers and the Baltimore Ravens earned a bye by securing the top spot in their respective conferences, leaving 12 other teams to battle it out for a chance to progress in the NFL playoffs."
+		}
+	]
 }
