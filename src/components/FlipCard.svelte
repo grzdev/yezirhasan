@@ -7,6 +7,9 @@
 	export let title: string;
 	export let description: string;
 	export let about: string;
+	export let link1: string;
+	export let link2: string;
+	export let disableLinks: boolean = false;
 
 	let flipped = false;
 
@@ -20,17 +23,20 @@
 	role="button"
 	tabindex="0"
 	aria-label="Flip card"
-	on:click={toggleFlip}
+	on:click={() => {
+		toggleFlip();
+	}}
 	on:keydown={(e) => {
-		if (e.key === 'Enter') toggleFlip();
+		if (e.key === 'Enter' && !disableLinks)
+			toggleFlip();
 	}}
 >
 	<div class="flip-card" class:flipped>
 		<!-- Front Side -->
 		<div
 			class="flip-front flex flex-col items-center justify-center rounded-[1.5rem]"
-			style="background-image: url({cardBg}); background-size: cover; background-position: center;"
 		>
+			<!-- style="background-image: url({cardBg}); background-size: cover; background-position: center;" -->
 			<div
 				class="flex flex-row gap-[1rem] md:gap-[2rem]"
 			>
@@ -45,18 +51,18 @@
 					class="w-[4.6rem] h-[4.6rem] md:w-[7rem] md:h-[7rem] rounded-full"
 				></video>
 				<h1
-					class="text-[2.1rem] md:text-[5rem] mt-[0.6rem] md:mt-[-1rem] font-bold text-white cursor-pointer opacity-70"
+					class="text-[2.1rem] md:text-[5rem] mt-[0.6rem] md:mt-[-1rem] font-bold text-black dark:text-white cursor-pointer opacity-50 dark:opacity-80"
 				>
 					{title}
 				</h1>
 			</div>
 
 			<p
-				class="text-[1.1rem] md:text-[1.4rem] w-[16rem] md:w-[35rem] mt-[2.5rem] text-white font-bold tracking-wide opacity-70"
+				class="text-[1.1rem] md:text-[1.4rem] w-[16rem] md:w-[35rem] mt-[2.5rem] text-black dark:text-white font-bold tracking-wide opacity-50 dark:opacity-80"
 			>
 				{description}
 				<span
-					class="text-white underline opacity-100 cursor-pointer"
+					class=" text-black dark:text-white underline opacity-100 cursor-pointer"
 					>more...</span
 				>
 			</p>
@@ -64,22 +70,38 @@
 			<div
 				class="flex flex-row gap-[2rem] mt-[3.5rem]"
 			>
-				<button class="animated-button">
-					<span
-						><Icon
+				<button
+					class="animated-button text-[#676767] dark:text-[#ffffff9c] shadow-[0_0_0_2px_#676767] dark:shadow-[0_0_0_2px_#ffffff9c]"
+					on:click={(event) => {
+						event.stopPropagation(); // Prevent flip animation
+						if (!disableLinks && link1)
+							window.open(link1, '_blank');
+					}}
+					disabled={disableLinks || !link1}
+				>
+					<span>
+						<Icon
 							icon="mingcute:eye-line"
 							class="text-[1.3rem] md:text-[2rem]"
-						/></span
-					>
+						/>
+					</span>
 					<span></span>
 				</button>
-				<button class="animated-button">
-					<span
-						><Icon
+				<button
+					class="animated-button text-[#676767] dark:text-[#ffffff9c] shadow-[0_0_0_2px_#676767] dark:shadow-[0_0_0_2px_#ffffff9c]"
+					on:click={(event) => {
+						event.stopPropagation(); // Prevent flip animation
+						if (!disableLinks && link2)
+							window.open(link2, '_blank');
+					}}
+					disabled={disableLinks || !link2}
+				>
+					<span>
+						<Icon
 							icon="bx:git-repo-forked"
 							class="text-[1.3rem] md:text-[2rem]"
-						/></span
-					>
+						/>
+					</span>
 					<span></span>
 				</button>
 			</div>
@@ -125,8 +147,8 @@
 		backface-visibility: hidden;
 		border-radius: 2xl;
 		box-shadow:
-			rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+			rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+			rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 	}
 
 	.flip-front {
@@ -150,8 +172,6 @@
 		background-color: inherit;
 		border-radius: 50px; /* Adjusted for mobile */
 		font-weight: 600;
-		color: #ffffff9c;
-		box-shadow: 0 0 0 2px #ffffff9c;
 		cursor: pointer;
 		overflow: hidden;
 		transition: all 0.6s

@@ -69,14 +69,14 @@
 
 	.bar {
 		display: inline-block;
-		width: 3px;
-		height: 20px;
+		width: 6px;
+		height: 30px;
 		border-radius: 10px;
 		animation: scale-up4 1s linear infinite;
 	}
 
 	.bar:nth-child(2) {
-		height: 35px;
+		height: 45px;
 		margin: 0 5px;
 		animation-delay: 0.25s;
 	}

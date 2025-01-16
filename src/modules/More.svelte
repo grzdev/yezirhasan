@@ -55,13 +55,13 @@
 		class="h-[80rem] md:h-[90rem] w-full bg-[#cecece] dark:bg-[#1d1d1e] flex flex-col items-center p-[2rem]"
 	>
 		<h2
-			class="cursor-pointer text-[white] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[5rem] md:mt-[5rem]"
+			class="cursor-pointer text-[#363636] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[5rem] md:mt-[5rem]"
 		>
-			My Prototypes
+			My Prototypes.
 		</h2>
 
 		<div
-			class="flex flex-col gap-[4rem] md:gap-[6rem] mt-[1rem] md:mt-[1rem]"
+			class="flex flex-col gap-[5rem] md:gap-[6rem] mt-[2rem] md:mt-[2rem]"
 		>
 			<!-- Flip Cards -->
 			<FlipCard
@@ -75,16 +75,21 @@
 				fav song and artists that rock your world. <br/><br/>
 				all that data plus more to make you appreciate
 				the music enthusiast in you."
+				link1="https://sounwave.netlify.app/"
+				link2="https://github.com/grzdev/sounwave-web"
 			/>
 
 			<FlipCard
 				{cardBg}
 				videoSrc={Flowfi}
 				title="flowfi."
-				description="your personal finance assitant that helps you keep track of your transactions."
+				description="your personal finance assistant that helps you keep track of your transactions."
 				about="flowfi makes tracking your spending effortless. <br/><br/> upload your bank statements, 
-				chat with floe, our ai chatbot, to find transactions instantly, and get insights on categories 
-				like food and data etc.. <br/><br/> stay in control of your cash flow."
+    chat with floe, our ai chatbot, to find transactions instantly, and get insights on categories 
+    like food and data etc.. <br/><br/> stay in control of your cash flow."
+				link1=""
+				link2=""
+				disableLinks={true}
 			/>
 		</div>
 	</div>

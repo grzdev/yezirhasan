@@ -161,7 +161,11 @@
 			<div
 				class="flex flex-col md:flex-row gap-[1.4vw]"
 			>
-				<a href="https://github.com/yeziR4">
+				<a
+					href="https://github.com/yeziR4"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<div
 						class="move-from-bottom px-[6vw] md:px-[2vw] flex-col w-[90vw] h-[32vh] md:w-[22.8vw] md:h-[47vh] cursor-pointer bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out md:hover:bg-[#7bff71] md:dark:hover:bg-[#43bb47] overflow-hidden"
 					>
@@ -193,30 +197,37 @@
 						</div>
 					</div>
 				</a>
-				<!-- <a href="/about/"></a> -->
-				<div
-					class="hidden md:block move-from-bottom p-[2vw] w-[22.8vw] h-[47vh] items-center justify-center cursor-pointer bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out hover:bg-[#7bff71] dark:hover:bg-[#43bb47] overflow-hidden"
+				<a
+					href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com"
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<div
-						class="flex flex-col mt-[11vh] items-center justify-center transition-all duration-1000 group-hover:translate-y-[-2vh] group-hover:duration-1000 group-hover:ease-in-out"
+						class="hidden md:block move-from-bottom p-[2vw] w-[22.8vw] h-[47vh] items-center justify-center cursor-pointer bg-[#cdcdcd] dark:bg-[#1A1A1C] rounded-2xl flex relative group transition-colors duration-1000 ease-in-out hover:bg-[#7bff71] dark:hover:bg-[#43bb47] overflow-hidden"
 					>
-						<h1 class="text-[16vw] md:text-[6vw]">
-							<Icon icon="ri:medium-fill" />
-						</h1>
-						<h1
-							class="text-[1.5vw] text-start font-semibold w-[12vw] opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"
+						<div
+							class="flex flex-col mt-[11vh] items-center justify-center transition-all duration-1000 group-hover:translate-y-[-2vh] group-hover:duration-1000 group-hover:ease-in-out"
 						>
-							View My Medium
-						</h1>
-						<h1
-							class="text-[2.3vw] ml-[10vw] transition-transform duration-1000 group-hover:translate-x-[1rem] group-hover:translate-y-[2rem]"
-						>
-							<Icon
-								icon="fluent:arrow-up-right-24-filled"
-							/>
-						</h1>
+							<h1
+								class="text-[16vw] md:text-[6vw]"
+							>
+								<Icon icon="bxl:gmail" />
+							</h1>
+							<h1
+								class="text-[1.5vw] md:text-[1.6rem] text-center font-semibold w-[12vw] md:w-[15vw] opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"
+							>
+								Shoot Me A Mail
+							</h1>
+							<h1
+								class="text-[2.3vw] ml-[10vw] transition-transform duration-1000 group-hover:translate-x-[1rem] group-hover:translate-y-[2rem]"
+							>
+								<Icon
+									icon="fluent:arrow-up-right-24-filled"
+								/>
+							</h1>
+						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 
 			<div
@@ -301,11 +312,6 @@
 	<div
 		class="move-from-buttom2 mt-[14vw] md:mt-[5vw] mb-[3vw] md:mb-[1vw] flex justify-center items-center flex-row gap-[3vw]"
 	>
-		<h1
-			class="text-[11vw] md:text-[3vw] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[#6a6868] dark:text-[#989898]"
-		>
-			<Icon icon="fluent:mail-add-20-filled" />
-		</h1>
 		<ThemeSwitch />
 	</div>
 </div>
