@@ -16,6 +16,10 @@
 	function toggleFlip() {
 		flipped = !flipped;
 	}
+
+	function handleVideoEnded(e: Event) {
+		(e.target as HTMLVideoElement).play();
+	}
 </script>
 
 <div
@@ -34,9 +38,8 @@
 	<div class="flip-card" class:flipped>
 		<!-- Front Side -->
 		<div
-			class="flip-front flex flex-col items-center justify-center rounded-[1.5rem]"
+			class="flip-front flex flex-col items-center justify-center rounded-[1.5rem] dark:bg-[#04041c]"
 		>
-			<!-- style="background-image: url({cardBg}); background-size: cover; background-position: center;" -->
 			<div
 				class="flex flex-row gap-[1rem] md:gap-[2rem]"
 			>
@@ -45,7 +48,7 @@
 					loop
 					autoplay
 					muted
-					playsinline
+					on:ended={handleVideoEnded}
 					disablePictureInPicture
 					preload="auto"
 					class="w-[4.6rem] h-[4.6rem] md:w-[7rem] md:h-[7rem] rounded-full"
