@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	export let cardBg: string;
 	export let videoSrc: string;
@@ -20,6 +21,31 @@
 	function handleVideoEnded(e: Event) {
 		(e.target as HTMLVideoElement).play();
 	}
+
+	onMount(() => {
+		const videoElement =
+			document.querySelector('video');
+		if (videoElement) {
+			// Ensure the video keeps playing
+			const playVideo = () => {
+				if (videoElement.paused) {
+					videoElement.play();
+				}
+			};
+
+			videoElement.addEventListener(
+				'pause',
+				playVideo
+			);
+
+			return () => {
+				videoElement.removeEventListener(
+					'pause',
+					playVideo
+				);
+			};
+		}
+	});
 </script>
 
 <div
@@ -48,6 +74,7 @@
 					loop
 					autoplay
 					muted
+					playsinline
 					on:ended={handleVideoEnded}
 					disablePictureInPicture
 					preload="auto"
@@ -125,6 +152,11 @@
 </div>
 
 <style>
+	video {
+		object-fit: cover;
+		display: block;
+	}
+
 	.flip-container {
 		perspective: 1000px;
 		cursor: default;
