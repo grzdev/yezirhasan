@@ -64,22 +64,16 @@
 	<div class="flip-card" class:flipped>
 		<!-- Front Side -->
 		<div
-			class="flip-front flex flex-col items-center justify-center rounded-[1.5rem] dark:bg-[#04041c]"
+			class="flip-front flex flex-col items-center justify-center rounded-[1.5rem] dark:bg-[#030314]"
 		>
 			<div
 				class="flex flex-row gap-[1rem] md:gap-[2rem]"
 			>
-				<video
+				<img
 					src={videoSrc}
-					loop
-					autoplay
-					muted
-					playsinline
-					on:ended={handleVideoEnded}
-					disablePictureInPicture
-					preload="auto"
+					alt="GIF"
 					class="w-[4.6rem] h-[4.6rem] md:w-[7rem] md:h-[7rem] rounded-full"
-				></video>
+				/>
 				<h1
 					class="text-[2.1rem] md:text-[5rem] mt-[0.6rem] md:mt-[-1rem] font-bold text-black dark:text-white cursor-pointer opacity-50 dark:opacity-80"
 				>

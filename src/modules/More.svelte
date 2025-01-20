@@ -3,8 +3,8 @@
 	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
 	import bg from '../image/moreBg.png';
 	import cardBg from '../image/cardbg3.jpeg';
-	import SounwaveVideo from '../image/sounwave2.webm';
-	import Flowfi from '../image/flowfi.webm';
+	import SounwaveVideo from '../image/sounwave3.gif';
+	import Flowfi from '../image/flowfi3.gif';
 	import FlipCard from '../components/FlipCard.svelte';
 </script>
 
