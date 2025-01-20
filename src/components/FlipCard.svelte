@@ -146,11 +146,6 @@
 </div>
 
 <style>
-	video {
-		object-fit: cover;
-		display: block;
-	}
-
 	.flip-container {
 		perspective: 1000px;
 		cursor: default;

@@ -169,24 +169,24 @@
 			/>
 
 			<div
-				class="w-full bg-black h-[4.4vw] overflow-hidden flex items-center"
+				class="w-full bg-black h-[2rem] md:h-[4.4vw] overflow-hidden flex items-center"
 				style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
 			>
 				<div class="marquee-wrapper">
 					<h1
-						class="text-[3vw] text-white anton-regular tracking-lighter marquee-content"
+						class="text-[1.2rem] md:text-[3vw] text-white anton-regular tracking-lighter marquee-content"
 					>
 						check back every thursday for new
 						articles
 					</h1>
 					<h1
-						class="text-[3vw] text-white anton-regular tracking-lighter marquee-content"
+						class="text-[1.2rem] md:text-[3vw] text-white anton-regular tracking-lighter marquee-content"
 					>
 						check back every thursday for new
 						articles
 					</h1>
 					<h1
-						class="text-[3vw] text-white anton-regular tracking-lighter marquee-content"
+						class="text-[1.2rem] md:text-[3vw] text-white anton-regular tracking-lighter marquee-content"
 					>
 						check back every thursday for new
 						articles

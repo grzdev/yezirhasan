@@ -33,17 +33,17 @@
 	>
 		<div class="marquee-wrapper">
 			<h1
-				class="text-[4.3rem] md:text-[5rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
+				class="text-[4.3rem] md:text-[6rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 			>
 				SPORTS JOURNALIST
 			</h1>
 			<h1
-				class="text-[4.3rem] md:text-[5rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
+				class="text-[4.3rem] md:text-[6rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 			>
 				BACKEND DEVELOPER
 			</h1>
 			<h1
-				class="text-[4.3rem] md:text-[5rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
+				class="text-[4.3rem] md:text-[6rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 			>
 				CREATIVE MANAGER
 			</h1>
@@ -68,7 +68,7 @@
 				{cardBg}
 				videoSrc={SounwaveVideo}
 				title="sounwave."
-				description="a site for music lovers and nerds that want to know and learn about what they listen to."
+				description="a site for music lovers and nerds that want to know and learn about what they listen to,"
 				about="a page that helps you check how well you
 				listen to music. <br/><br/> shows you songs you can’t
 				do without, producers and writers of your
@@ -83,7 +83,7 @@
 				{cardBg}
 				videoSrc={Flowfi}
 				title="flowfi."
-				description="your personal finance assistant that helps you keep track of your transactions."
+				description="your personal finance assistant that helps you keep track of your transactions,"
 				about="flowfi makes tracking your spending effortless. <br/><br/> upload your bank statements, 
     chat with floe, our ai chatbot, to find transactions instantly, and get insights on categories 
     like food and data etc.. <br/><br/> stay in control of your cash flow."
@@ -95,7 +95,7 @@
 	</div>
 
 	<!-- Theme Switch -->
-	<div class="mt-[5rem]">
+	<div class="mt-[5rem] mb-[1rem]">
 		<ThemeSwitch />
 	</div>
 </div>
@@ -145,6 +145,12 @@
 
 	.marquee-content {
 		padding-right: 5vw; /* Adjust the gap between the texts */
+	}
+
+	@media (max-width: 640px) {
+		.marquee-content {
+			padding-right: 3rem; /* Adjust the gap for mobile screens */
+		}
 	}
 
 	@keyframes marquee {

@@ -214,7 +214,7 @@
 								<Icon icon="bxl:gmail" />
 							</h1>
 							<h1
-								class="text-[1.5vw] md:text-[1.6rem] text-center font-semibold w-[12vw] md:w-[15vw] opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"
+								class="text-[1.5vw] md:text-[1.6rem] text-center font-semibold w-[12vw] md:w-[15rem] opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"
 							>
 								Shoot Me A Mail
 							</h1>
