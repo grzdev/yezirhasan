@@ -159,14 +159,14 @@
 		</div>
 
 		<div
-			class="w-[55vw] md:w-[33vw] px-[0.6rem] md:px-[2.1vw] mt-[2vw] mb-[0vw] md:mb-[1vw] md:mt-[2.4vw] flex flex-row items-center justify-between move-from-buttom2 hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#aeafae] flex text=start cursor-pointer"
+			class="w-[20rem] md:w-[33vw] px-[1rem] md:px-[2.1vw] mt-[1.2rem] mb-[0vw] md:mb-[1vw] md:mt-[2.4vw] flex flex-row items-center justify-between move-from-buttom2 hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2.5rem] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#aeafae] flex text=start cursor-pointer"
 		>
 			<a
 				href="/articles/"
 				class="flex flex-row items-center justify-between gap-[1.5rem]"
 			>
 				<h2 class=" ">All articles</h2>
-				<h1 class="text-[5vw] md:text-[3vw]">
+				<h1 class="text-[2rem] md:text-[3vw]">
 					<Icon
 						icon="heroicons:arrow-long-right"
 					/>

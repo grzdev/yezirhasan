@@ -69,7 +69,7 @@
 							style="transform: rotate(25deg);"
 						/>
 						<h1
-							class="absolute text-[0.8rem] md:text-[1.2rem] top-[21%] left-[35%] w-[10rem] md:w-[14rem] font-semibold text-center text-black text-start"
+							class="absolute text-[0.8rem] md:text-[1.2rem] top-[21%] left-[34%] md:eft-[35%] w-[11rem] md:w-[14rem] font-semibold text-center text-black text-start"
 						>
 							get in touch, <br />
 							let's make something amazing 💫
@@ -188,7 +188,7 @@
 		}
 
 		button span {
-			width: 3.6em;
+			width: 3.5em;
 			height: 2em;
 			font-size: 1.2em;
 		}

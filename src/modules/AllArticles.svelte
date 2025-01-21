@@ -150,7 +150,10 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-3 gap-[4vw] md:gap-[2vw] mt-[4vw] md:mt-[1vw] fade-in-bottom ml-[10vw] md:ml-[4vw]"
 	>
-		<WorkCard work={filteredWork} />
+		<WorkCard
+			work={filteredWork}
+			data={filteredWork}
+		/>
 	</div>
 </div>
 
