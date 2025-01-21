@@ -1,10 +1,10 @@
 <script>
-	import Icon from '@iconify/svelte';
-	import Logo from '../image/logo5.png';
-	import LogoDark2 from '../image/logo1.png';
 	import CourtBg from '../image/pitch6.jpeg';
 	import bg from '../image/cardbg3.jpeg';
 	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
+	import Portriat from '../image/yezir-portrait.png';
+	import Bubble from '../image/bubble2.png';
+	import Icon from '@iconify/svelte';
 
 	let flippedContactCard = false;
 
@@ -14,7 +14,7 @@
 </script>
 
 <div
-	class="flex items-center justify-center flex-col"
+	class="flex items-center justify-center flex-col overflow-x-hidden"
 >
 	<h2
 		class="mt-[6rem] md:mt-[0rem] cursor-pointer text-[#6a6868] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2rem] md:text-[4rem] font-bold"
@@ -33,7 +33,7 @@
 		}}
 	>
 		<div
-			class="flip-card w-[18rem] h-[10rem] md:w-[40rem] md:h-[22rem]"
+			class="flip-card w-[22em] h-[14rem] md:w-[40rem] md:h-[24rem]"
 			class:flipped={flippedContactCard}
 		>
 			<!-- Front side -->
@@ -50,13 +50,53 @@
 
 			<!-- Back side -->
 			<div
-				class="flip-back w-[45vw] h-[25vw] flex items-center justify-center bg-cover bg-center rounded-2xl px-[1vw] py-[1vw]"
+				class="flip-back w-[45vw] h-[25vw] flex flex-col items-center justify-center bg-cover bg-center rounded-2xl"
 				style="background-image: url({bg});"
-			></div>
+			>
+				<div
+					class="flex flex-row gap-[0.5rem] md:gap-[1rem] items-center justify-center"
+				>
+					<img
+						src={Portriat}
+						alt="yezir-portrait"
+						class="rounded-full w-[5rem] md:w-[9rem]"
+					/>
+					<div class="relative">
+						<img
+							src={Bubble}
+							alt="yezir-portrait"
+							class="w-[14rem] md:w-[22rem]"
+							style="transform: rotate(25deg);"
+						/>
+						<h1
+							class="absolute text-[0.8rem] md:text-[1.2rem] top-[21%] left-[35%] w-[10rem] md:w-[14rem] font-semibold text-center text-black text-start"
+						>
+							get in touch, <br />
+							let's make something amazing 💫
+						</h1>
+					</div>
+				</div>
+
+				<div
+					class="flex flex-col gap-[0.4rem] mt-[-3rem] md:mt-[-2rem] justify-center items-center"
+				>
+					<a
+						href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<button class="">
+							<span>
+								<Icon icon="bxl:gmail" />
+							</span>
+						</button>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="mt-[5rem]">
+	<div class="mt-[7rem] md:mt-[5rem] mb-[2rem]">
 		<ThemeSwitch />
 	</div>
 </div>
@@ -105,5 +145,62 @@
 		50% {
 			transform: translateY(-9px);
 		}
+	}
+
+	button {
+		padding: 0.1em 0.25em;
+		width: 7em;
+		height: 4.4em;
+		background-color: #212121;
+		border: 0.08em solid #fff;
+		border-radius: 2rem;
+		font-size: 13px;
+		font-family: monospace;
+	}
+
+	button span {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		bottom: 0.4em;
+		width: 4.2em;
+		height: 2.4em;
+		background: rgb(12, 32, 56);
+		background: linear-gradient(
+			304deg,
+			rgba(12, 32, 56, 1) 0%,
+			rgb(57, 254, 116) 100%
+		);
+
+		border-radius: 1.4rem;
+		font-size: 1.5em;
+		color: #fff;
+		border: 0.08em solid #fff;
+		box-shadow: 0 0.4em 0.1em 0.019em #d3d1d1;
+	}
+
+	@media (max-width: 768px) {
+		button {
+			width: 4.9em;
+			height: 3.5em;
+		}
+
+		button span {
+			width: 3.6em;
+			height: 2em;
+			font-size: 1.2em;
+		}
+	}
+
+	button span:hover {
+		transition: all 0.5s;
+		transform: translate(0, 0.4em);
+		box-shadow: 0 0 0 0 #d3d1d1;
+	}
+
+	button span:not(hover) {
+		transition: all 1s;
 	}
 </style>
