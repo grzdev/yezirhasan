@@ -6,6 +6,7 @@
 	import SounwaveVideo from '../image/sounwave3.gif';
 	import Flowfi from '../image/flowfi3.gif';
 	import FlipCard from '../components/FlipCard.svelte';
+	import Building from '../image/building.gif';
 </script>
 
 <div

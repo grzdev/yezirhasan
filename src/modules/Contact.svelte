@@ -81,7 +81,7 @@
 					class="flex flex-col gap-[0.4rem] mt-[-3rem] md:mt-[-2rem] justify-center items-center"
 				>
 					<a
-						href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com"
+						href="https://mail.google.com/mail/?view=cm&fs=1&to=yezirhasan@gmail.com@gmail.com"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

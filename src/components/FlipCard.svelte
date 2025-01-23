@@ -2,6 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import Building from '../image/building.gif';
 
 	export let cardBg: string;
 	export let videoSrc: string;
@@ -91,7 +92,7 @@
 				>
 			</p>
 
-			<div
+			<!-- <div
 				class="flex flex-row gap-[2rem] mt-[3.5rem]"
 			>
 				<button
@@ -128,6 +129,63 @@
 					</span>
 					<span></span>
 				</button>
+			</div> -->
+			<div
+				class="flex flex-row gap-[2rem] mt-[3.5rem]"
+			>
+				{#if disableLinks}
+					<!-- Display Building GIF when both links are disabled -->
+					<div
+						class="flex flex-col justify-center items-center gap-[0.5rem]"
+					>
+						<img
+							src={Building}
+							alt="Building GIF"
+							class="w-[3rem] h-[3rem] md:w-[5rem] md:h-[5rem] rounded-[1rem] md:rounded-[1rem]"
+						/>
+						<h1
+							class="text-black dark:text-white cursor-pointer opacity-50 dark:opacity-80 font-semibold"
+						>
+							still building...
+						</h1>
+					</div>
+				{:else}
+					<!-- Render Buttons -->
+					<button
+						class="animated-button text-[#676767] dark:text-[#ffffff9c] shadow-[0_0_0_2px_#676767] dark:shadow-[0_0_0_2px_#ffffff9c]"
+						on:click={(event) => {
+							event.stopPropagation(); // Prevent flip animation
+							if (!disableLinks && link1)
+								window.open(link1, '_blank');
+						}}
+						disabled={disableLinks || !link1}
+					>
+						<span>
+							<Icon
+								icon="mingcute:eye-line"
+								class="text-[1.3rem] md:text-[2rem]"
+							/>
+						</span>
+						<span></span>
+					</button>
+					<button
+						class="animated-button text-[#676767] dark:text-[#ffffff9c] shadow-[0_0_0_2px_#676767] dark:shadow-[0_0_0_2px_#ffffff9c]"
+						on:click={(event) => {
+							event.stopPropagation(); // Prevent flip animation
+							if (!disableLinks && link2)
+								window.open(link2, '_blank');
+						}}
+						disabled={disableLinks || !link2}
+					>
+						<span>
+							<Icon
+								icon="bx:git-repo-forked"
+								class="text-[1.3rem] md:text-[2rem]"
+							/>
+						</span>
+						<span></span>
+					</button>
+				{/if}
 			</div>
 		</div>
 
