@@ -65,11 +65,11 @@
 						<img
 							src={Bubble}
 							alt="yezir-portrait"
-							class="w-[14rem] md:w-[22rem]"
+							class="w-[12rem] md:w-[22rem]"
 							style="transform: rotate(25deg);"
 						/>
 						<h1
-							class="absolute text-[0.8rem] md:text-[1.2rem] top-[21%] left-[34%] md:eft-[35%] w-[11rem] md:w-[14rem] font-semibold text-center text-black text-start"
+							class="absolute text-[0.7rem] md:text-[1.2rem] top-[21%] left-[33%] md:eft-[35%] w-[8rem] md:w-[14rem] font-semibold text-center text-black text-start"
 						>
 							get in touch, <br />
 							let's make something amazing 💫
@@ -78,7 +78,7 @@
 				</div>
 
 				<div
-					class="flex flex-col gap-[0.4rem] mt-[-3rem] md:mt-[-2rem] justify-center items-center"
+					class="flex flex-col gap-[0.2rem] md:gap-[0.4rem] mt-[-2.5rem] md:mt-[-2rem] justify-center items-center"
 				>
 					<a
 						href="mailto:yezirhasan@gmail.com?subject=&body="
@@ -91,6 +91,12 @@
 							</span>
 						</button>
 					</a>
+
+					<h1
+						class="text-[0.7rem] md:text-[0.8rem] font-semibold"
+					>
+						yezirhasan@gmail.com
+					</h1>
 				</div>
 			</div>
 		</div>
