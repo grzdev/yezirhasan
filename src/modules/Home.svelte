@@ -198,7 +198,7 @@
 					</div>
 				</a>
 				<a
-					href="https://mail.google.com/mail/?view=cm&fs=1&to=yezirhasan@gmail.com"
+					href="mailto:yezirhasan@gmail.com?subject=&body="
 					target="_blank"
 					rel="noopener noreferrer"
 				>
