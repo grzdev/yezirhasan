@@ -2,8 +2,10 @@
 	import { fade, slide } from 'svelte/transition';
 	import bg from '../image/npbackground.jpeg';
 	import WorkCard from '../components/WorkCard.svelte';
+	import ArticleCard from '../components/ArticleCard.svelte';
 	import newsImage from '../image/news-image.jpeg';
 	import featuredWork from '../components/featuredWork.json';
+	import newArticleData from '../components/new-article.json';
 	import type { Work } from '../components/workInterface';
 	import Icon from '@iconify/svelte';
 	import npbackground from '../image/npbackground.jpeg';
@@ -64,7 +66,7 @@
 
 <!-- Work page content -->
 <div
-	class="flex justify-center items-center px-[2vw] md:px-[1vw]"
+	class="flex justify-center flex-col gap-[1.5rem] md:gap-[1rem] mb-[3rem] items-center px-[2vw] md:px-[1vw]"
 >
 	<div
 		class="flex flex-col overflow-x-hidden w-full"
@@ -76,7 +78,41 @@
 			<h2
 				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4.4vw] font-bold text-[#6a6868] dark:text-[#aeafae] mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
 			>
-				Featured Articles
+				Featured Articles/Content
+			</h2>
+
+			
+		</div>
+
+		
+
+		<!-- Work Cards -->
+		<div
+			class="w-full mt-[2vw] md:mt-[0vw] px-[0.2rem] md:px-[1.3vw] ml-[0.5rem]"
+		>
+			<div
+				class="move-from-buttom flex flex-row gap-[3vw] md:gap-[2vw] overflow-x-auto overflow-y-hidden custom-scrollbar move-container"
+			>
+				<ArticleCard
+					articles={newArticleData.articles}
+				/>
+			</div>
+		</div>
+
+		
+	</div>
+
+	<div
+		class="flex flex-col  overflow-x-hidden w-full"
+	>
+		<!-- Featured Work Header -->
+		<div
+			class="flex items-center w-full px-[2vw] md:px-[0.7vw] justify-between"
+		>
+			<h2
+				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4.4vw] font-bold text-[#6a6868] dark:text-[#aeafae] mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
+			>
+				Sport Articles
 			</h2>
 
 			<!-- Filter Button -->
@@ -158,22 +194,9 @@
 			</div>
 		</div>
 
-		<div
-			class="w-[20rem] md:w-[33vw] px-[1rem] md:px-[2.1vw] mt-[1.2rem] mb-[0vw] md:mb-[1vw] md:mt-[2.4vw] flex flex-row items-center justify-between move-from-buttom2 hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2.5rem] md:text-[4vw] font-bold text-[#6a6868] dark:text-[#aeafae] flex text=start cursor-pointer"
-		>
-			<a
-				href="/articles/"
-				class="flex flex-row items-center justify-between gap-[1.5rem]"
-			>
-				<h2 class=" ">All articles</h2>
-				<h1 class="text-[2rem] md:text-[3vw]">
-					<Icon
-						icon="heroicons:arrow-long-right"
-					/>
-				</h1>
-			</a>
-		</div>
+		
 	</div>
+	
 </div>
 
 <style>

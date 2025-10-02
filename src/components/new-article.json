@@ -1,0 +1,54 @@
+{
+	"articles": [
+		
+		{
+			"id": 1,
+			"img": "https://i.pinimg.com/736x/69/7f/69/697f69d81b440afd16ed36cde5deb89d.jpg",
+			"header": "Ultra Times",
+			"link": "https://ultratimes.io/en/news/metahoof-a-gallop-into-web3-gaming"
+		},
+        {
+			"id": 2,
+			"img": "https://i.pinimg.com/736x/5b/fa/16/5bfa16365b18247615be944ca331b2e7.jpg",
+			"header": "Net Mind",
+			"link": "https://x.com/netmindai/status/1901640336042229983?s=46"
+		},
+        {
+			"id": 3,
+			"img": "https://i.pinimg.com/736x/69/7f/69/697f69d81b440afd16ed36cde5deb89d.jpg",
+			"header": "Content",
+			"link": "https://x.com/ultra_timesen/status/1973645330588606683?s=46"
+		},
+		{
+			"id": 4,
+			"img": "https://i.pinimg.com/736x/69/7f/69/697f69d81b440afd16ed36cde5deb89d.jpg",
+			"header": "Ultra Times",
+			"link": "https://ultratimes.io/en/news/the-entrepreneurial-playbook-key-insights-from-ultra-ceo-gus-van-rijckevorsel"
+		},
+		{
+			"id": 5,
+			"img": "https://i.pinimg.com/736x/69/7f/69/697f69d81b440afd16ed36cde5deb89d.jpg",
+			"header": "Content",
+			"link": "https://x.com/ultra_timesen/status/1907359999506161868?s=46"
+		},
+        {
+			"id": 6,
+			"img": "https://i.pinimg.com/736x/5b/fa/16/5bfa16365b18247615be944ca331b2e7.jpg",
+			"header": "Content",
+			"link": "https://x.com/netmindai/status/1899113540272984553?s=46"
+		},
+        {
+			"id": 7,
+			"img": "https://i.pinimg.com/1200x/73/83/6f/73836f450e8efdbb5f18ea83da73e359.jpg",
+			"header": "Content",
+			"link": "https://x.com/channelrsl1/status/1965150859110797697?s=46"
+		},
+        {
+			"id": 8,
+			"img": "https://i.pinimg.com/1200x/73/83/6f/73836f450e8efdbb5f18ea83da73e359.jpg",
+			"header": "Content",
+			"link": "https://x.com/channelrsl1/status/1965019977486103007?s=46"
+		}
+
+	]
+}
