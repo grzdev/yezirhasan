@@ -66,7 +66,7 @@
 								class="w-[8.4rem] md:w-[9rem] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
 							/>
                             <div
-								class="w-[8.4rem] md:w-[9rem] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
+								class="w-[8.4rem] hidden md:flex md:w-[9rem] bg-[#5e5e5e] h-[0.6vw] md:h-[0.2vw]"
 							/>
 						</div>
 
