@@ -47,7 +47,7 @@
 		<div class="flex flex-col md:flex-row md:gap-[2rem] space-y-[1rem] md:space-y-0">
 			{#if headersVisible[0]}
 				<h1
-					class="text-[3.8rem] leading-[2rem] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
+					class="text-[4.2rem] leading-[2rem] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
 					in:fade={{ duration: 1500 }}
 					style="transform: scaleY(1.1);"
 				>
@@ -56,7 +56,7 @@
 			{/if}
 			{#if headersVisible[1]}
 				<h1
-					class="text-[2.4rem] leading-[15vw] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#6d6e6d] text-[#7c7c7c] hover:text-[#5d5d5d] dark:hover:text-[#a0a0a0] cursor-pointer transition ease-in duration-300"
+					class="text-[2.4rem] leading-[4rem] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#6d6e6d] text-[#7c7c7c] hover:text-[#5d5d5d] dark:hover:text-[#a0a0a0] cursor-pointer transition ease-in duration-300"
 					in:fade={{ duration: 1500 }}
 					style="transform: scaleY(1.1);"
 				>
