@@ -136,7 +136,7 @@
 {#if isMobileView && menuOpen}
 	<div class="fixed inset-0 z-50">
 		<div
-			class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+			class="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
 			on:click={toggleMenu}
 			on:keydown={handleKeyDown}
 			tabindex="-1"

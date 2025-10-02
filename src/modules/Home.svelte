@@ -49,7 +49,7 @@
 				in:fade={{ duration: 1500 }}
 				style="transform: scaleY(1.1);"
 			>
-				Sports Journalist.
+				Journalist.
 			</h1>
 		{/if}
 		{#if headersVisible[1]}
@@ -58,7 +58,8 @@
 				in:fade={{ duration: 1500 }}
 				style="transform: scaleY(1.1); "
 			>
-				Backend Developer.
+				Creative Manager.
+				
 			</h1>
 		{/if}
 		{#if headersVisible[2]}
@@ -67,7 +68,7 @@
 				in:fade={{ duration: 1500 }}
 				style="transform: scaleY(1.1); "
 			>
-				Creative Manager.
+				Vibe Coder.
 			</h1>
 		{/if}
 	</div>
