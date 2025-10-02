@@ -37,36 +37,40 @@
 </script>
 
 <div
-	class="flex flex-col career-section justify-center px-[4vw] md:px-[1.7vw] mt-[5vw] md:mt-[0]"
+	class="flex flex-col career-section justify-center px-[4vw] md:px-[1.7vw] mt-[3rem] md:mt-[3rem]"
 >
 	<!-- Career headers -->
 	<div
-		class="flex career-div flex-col items-start space-y-[8vw] md:space-y-[2vw]"
+		class="flex career-div flex-col items-start space-y-[1rem] md:space-y-[1rem] md:items-center"
 	>
-		{#if headersVisible[0]}
-			<h1
-				class="text-[15vw] leading-[15vw] md:leading-none text-start md:text-[5vw] lg:text-[8.5vw] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
-				in:fade={{ duration: 1500 }}
-				style="transform: scaleY(1.1);"
-			>
-				Journalist.
-			</h1>
-		{/if}
-		{#if headersVisible[1]}
-			<h1
-				class="text-[15vw] leading-[15vw] md:leading-none text-start md:text-[4vw] lg:text-[6.8vw] font-bold dark:text-[#6d6e6d] text-[#7c7c7c] hover:text-[#5d5d5d] dark:hover:text-[#a0a0a0] cursor-pointer transition ease-in duration-300"
-				in:fade={{ duration: 1500 }}
-				style="transform: scaleY(1.1); "
-			>
-				Creative Manager.
-				
-			</h1>
-		{/if}
+		<!-- First row: Journalist and Creative Manager side by side on tablet/PC -->
+		<div class="flex flex-col md:flex-row md:gap-[2rem] space-y-[1rem] md:space-y-0">
+			{#if headersVisible[0]}
+				<h1
+					class="text-[3.5rem] leading-[2rem] md:leading-none text-start md:text-[4.7rem] lg:text-[5.4rem] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
+					in:fade={{ duration: 1500 }}
+					style="transform: scaleY(1.1);"
+				>
+					Journalist.
+				</h1>
+			{/if}
+			{#if headersVisible[1]}
+				<h1
+					class="text-[2.5rem] leading-[15vw] md:leading-none text-start md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#6d6e6d] text-[#7c7c7c] hover:text-[#5d5d5d] dark:hover:text-[#a0a0a0] cursor-pointer transition ease-in duration-300"
+					in:fade={{ duration: 1500 }}
+					style="transform: scaleY(1.1);"
+				>
+					Creative Manager.
+				</h1>
+			{/if}
+		</div>
+		
+		<!-- Second row: Vibe Coder centered below -->
 		{#if headersVisible[2]}
 			<h1
-				class="text-[15vw] leading-[15vw] md:leading-none text-start md:text-[4vw] lg:text-[7vw] font-bold dark:text-[#484948] text-[#a3a3a3] hover:text-[#7c7c7c] dark:hover:text-[#7d7d7d] cursor-pointer transition ease-in duration-300"
+				class="text-[3.1rem] leading-[1rem] md:leading-none text-start md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#484948] text-[#a3a3a3] hover:text-[#7c7c7c] dark:hover:text-[#7d7d7d] cursor-pointer transition ease-in duration-300 md:text-center"
 				in:fade={{ duration: 1500 }}
-				style="transform: scaleY(1.1); "
+				style="transform: scaleY(1.1);"
 			>
 				Vibe Coder.
 			</h1>
@@ -75,7 +79,7 @@
 
 	<!-- Links to other pages  -->
 	<div
-		class="flex links-to-pages flex-col md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[6vh] md:mt-[9vh]"
+		class="flex links-to-pages flex-col md:flex-row gap-[4vw] md:gap-[1.4vw] mt-[3rem] md:mt-[9vh]"
 	>
 		{#if cardVisible}
 			<a href="/more/">
@@ -95,13 +99,6 @@
 							style="max-height: 100%; max-width: 100%; object-fit: contain;"
 						/>
 					</div>
-					<h1
-						class="text-[8vw] md:text-[3vw] mt-[20vh] ml-[14vw] transition-all duration-1000 md:group-hover:translate-x-[10vw] md:group-hover:opacity-0"
-					>
-						<Icon
-							icon="heroicons:arrow-long-right"
-						/>
-					</h1>
 					<h1
 						class="text-[7vw] md:text-[3vw] text-start font-semibold w-[15vw] absolute top-[7vh] left-[calc(100% + 2.4vw)] opacity-0 md:transition-opacity duration-500 md:group-hover:opacity-100 delay-200"
 					>
@@ -128,12 +125,12 @@
 							<h1
 								class="text-[6.6vw] md:text-[2.6vw] font-semibold transition-all duration-1000 md:group-hover:translate-x-[10vw] md:group-hover:translate-y-[0.5vw] md:group-hover:opacity-0"
 							>
-								Sport Articles
+								Articles
 							</h1>
 							<h1
 								class="text-[6.6vw] md:text-[2.6vw] font-semibold absolute left-[-8vw] opacity-0 transition-all duration-1000 md:group-hover:translate-x-[10vw] md:group-hover:translate-y-[1vw] md:group-hover:opacity-100"
 							>
-								View My Sport Articles
+								View My Articles
 							</h1>
 							<h1
 								class="text-[8vw] md:text-[3vw] transition-transform duration-1000 md:group-hover:translate-y-[1vw]"

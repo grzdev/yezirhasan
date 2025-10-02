@@ -2,7 +2,7 @@
 	import ThemeSwitch from '$lib/ThemeSwitch/ThemeSwitch.svelte';
 	import Icon from '@iconify/svelte';
 	import { fade, fly } from 'svelte/transition';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { createEventDispatcher } from 'svelte';
 	import Logo from '../image/logo6.png';
 	import LogoDark2 from '../image/logo7.png';
@@ -26,15 +26,41 @@
 		);
 	});
 
+	// Cleanup: restore body scrolling when component is destroyed
+	onDestroy(() => {
+		if (typeof document !== 'undefined') {
+			document.body.style.overflow = '';
+		}
+	});
+
+	// Helper function to close menu and restore scrolling
+	function closeMenu() {
+		menuOpen = false;
+		dispatch('toggleMenu');
+		// Re-enable body scrolling
+		if (typeof document !== 'undefined') {
+			document.body.style.overflow = '';
+		}
+	}
+
 	// Toggle menu function
 	function toggleMenu() {
 		menuOpen = !menuOpen;
 		dispatch('toggleMenu');
+		
+		// Prevent body scrolling when mobile menu is open
+		if (typeof document !== 'undefined') {
+			if (menuOpen) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = '';
+			}
+		}
 	}
 
 	function handleKeyDown(event: { key: string }) {
 		if (event.key === 'Escape') {
-			toggleMenu();
+			closeMenu();
 		}
 	}
 
@@ -137,7 +163,7 @@
 	<div class="fixed inset-0 z-50">
 		<div
 			class="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-			on:click={toggleMenu}
+			on:click={closeMenu}
 			on:keydown={handleKeyDown}
 			tabindex="-1"
 			role="button"
@@ -159,6 +185,7 @@
 							: 'text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out mt-[3rem] text-xl sm:text-3xl font-semibold'}
 						in:fly={{ y: 200, duration: 500 }}
 						out:fly={{ y: 200, duration: 2500 }}
+						on:click={closeMenu}
 					>
 						Home
 					</a>
@@ -169,6 +196,7 @@
 							: 'text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold'}
 						in:fly={{ y: 200, duration: 700 }}
 						out:fly={{ y: 200, duration: 2000 }}
+						on:click={closeMenu}
 					>
 						Work
 					</a>
@@ -180,6 +208,7 @@
 							: 'text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl font-semibold'}
 						in:fly={{ y: 200, duration: 1300 }}
 						out:fly={{ y: 200, duration: 1000 }}
+						on:click={closeMenu}
 					>
 						More
 					</a>
@@ -188,6 +217,7 @@
 						class="w-[10rem] h-[3rem] bg-[#3bc26a] dark:bg-[#f4f4f4] text-[#ededed] dark:text-[black] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-2xl"
 						in:fly={{ y: 200, duration: 1900 }}
 						out:fly={{ y: 200, duration: 300 }}
+						on:click={closeMenu}
 					>
 						<h1 class="font-semibold text-xl">
 							Get in touch
