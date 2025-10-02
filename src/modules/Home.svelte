@@ -41,13 +41,13 @@
 >
 	<!-- Career headers -->
 	<div
-		class="flex career-div flex-col items-start space-y-[1rem] md:space-y-[1rem] md:items-center"
+		class="flex career-div flex-col items-center space-y-[1rem] md:space-y-[1rem] md:items-center"
 	>
 		<!-- First row: Journalist and Creative Manager side by side on tablet/PC -->
 		<div class="flex flex-col md:flex-row md:gap-[2rem] space-y-[1rem] md:space-y-0">
 			{#if headersVisible[0]}
 				<h1
-					class="text-[3.5rem] leading-[2rem] md:leading-none text-start md:text-[4.7rem] lg:text-[5.4rem] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
+					class="text-[3.8rem] leading-[2rem] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem] font-bold dark:text-[#aeafae] text-[#5e5e5e] hover:text-[#3e3e3e] dark:hover:text-[#d0d0d0] cursor-pointer transition ease-in duration-300 relative"
 					in:fade={{ duration: 1500 }}
 					style="transform: scaleY(1.1);"
 				>
@@ -56,7 +56,7 @@
 			{/if}
 			{#if headersVisible[1]}
 				<h1
-					class="text-[2.5rem] leading-[15vw] md:leading-none text-start md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#6d6e6d] text-[#7c7c7c] hover:text-[#5d5d5d] dark:hover:text-[#a0a0a0] cursor-pointer transition ease-in duration-300"
+					class="text-[2.4rem] leading-[15vw] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#6d6e6d] text-[#7c7c7c] hover:text-[#5d5d5d] dark:hover:text-[#a0a0a0] cursor-pointer transition ease-in duration-300"
 					in:fade={{ duration: 1500 }}
 					style="transform: scaleY(1.1);"
 				>
@@ -68,7 +68,7 @@
 		<!-- Second row: Vibe Coder centered below -->
 		{#if headersVisible[2]}
 			<h1
-				class="text-[3.1rem] leading-[1rem] md:leading-none text-start md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#484948] text-[#a3a3a3] hover:text-[#7c7c7c] dark:hover:text-[#7d7d7d] cursor-pointer transition ease-in duration-300 md:text-center"
+				class="text-[2.3rem] leading-[1rem] md:leading-none text-center md:text-[4.7rem] lg:text-[5.4rem]  font-bold dark:text-[#484948] text-[#a3a3a3] hover:text-[#7c7c7c] dark:hover:text-[#7d7d7d] cursor-pointer transition ease-in duration-300 md:text-center"
 				in:fade={{ duration: 1500 }}
 				style="transform: scaleY(1.1);"
 			>
