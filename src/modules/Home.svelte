@@ -250,11 +250,11 @@
 						<h1
 							class="text-[5.5vw] md:text-[1.5vw] font-semibold"
 						>
-							Sports Research
+							Research
 						</h1>
 						<h1 class="text-[11vw] md:text-[5vw]">
 							<Icon
-								icon="fluent-mdl2:more-sports"
+								icon="game-icons:archive-research"
 							/>
 						</h1>
 					</div>

@@ -13,11 +13,11 @@
 
 	const careers = [
 		{
-			title: 'Sports Journalist',
+			title: 'Journalist',
 			skills: [
 				{
-					name: 'Sports Research',
-					icon: 'fluent-mdl2:more-sports'
+					name: 'Research',
+					icon: 'game-icons:archive-research'
 				},
 				{
 					name: 'Feature Writing',
@@ -30,29 +30,6 @@
 				// { name: 'Game and Player Analysis', icon: 'carbon:analyze' },
 				// { name: 'Content Curation for Sports News', icon: 'carbon:list' },
 				// { name: 'Social Media Content Management', icon: 'carbon:social' }
-			]
-		},
-		{
-			title: 'Backend Developer',
-			skills: [
-				// {
-				// 	name: 'Server-Side Logic',
-				// 	icon: 'carbon:ibm-dynamic-route-server'
-				// },
-				{
-					name: 'Chatbot Integration',
-					icon: 'carbon:bot'
-				},
-				{
-					name: 'API Development',
-					icon: 'carbon:api'
-				},
-				// { name: 'Database Management', icon: 'carbon:data-table' },
-				// { name: 'Security and Authentication', icon: 'carbon:lock' },
-				{
-					name: 'Performance Optimization',
-					icon: 'eos-icons:performance'
-				}
 			]
 		},
 		{
@@ -74,7 +51,30 @@
 				// { name: 'UI/UX Design', icon: 'carbon:user-avatar-filled' }
 				// { name: 'Multimedia Content Creation', icon: 'carbon:video' }
 			]
-		}
+		},
+		{
+			title: 'Vibe Coder',
+			skills: [
+				// {
+				// 	name: 'Server-Side Logic',
+				// 	icon: 'carbon:ibm-dynamic-route-server'
+				// },
+				{
+					name: 'Chatbot Integration',
+					icon: 'carbon:bot'
+				},
+				{
+					name: 'API Development',
+					icon: 'carbon:api'
+				},
+				// { name: 'Database Management', icon: 'carbon:data-table' },
+				// { name: 'Security and Authentication', icon: 'carbon:lock' },
+				{
+					name: 'Performance Optimization',
+					icon: 'eos-icons:performance'
+				}
+			]
+		},
 	];
 </script>
 
