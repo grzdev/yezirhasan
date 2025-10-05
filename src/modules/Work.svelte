@@ -76,15 +76,12 @@
 			class="flex items-center w-full px-[2vw] md:px-[0.7vw] justify-between"
 		>
 			<h2
-				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4.4vw] font-bold text-[#6a6868] dark:text-[#aeafae] mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
+				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[1.3rem] md:text-[2.5rem] font-bold text-[#6a6868] dark:text-[#aeafae] mt-[2rem] ml-[] md:ml-[1vw] md:mt-[2rem]"
+				style="font-family: 'Boldonse', system-ui; font-weight: 400; font-style: normal;"
 			>
 				Featured Articles/Content
 			</h2>
-
-			
 		</div>
-
-		
 
 		<!-- Work Cards -->
 		<div
@@ -98,26 +95,25 @@
 				/>
 			</div>
 		</div>
-
-		
 	</div>
 
 	<div
-		class="flex flex-col  overflow-x-hidden w-full"
+		class="flex flex-col overflow-x-hidden w-full"
 	>
 		<!-- Featured Work Header -->
 		<div
 			class="flex items-center w-full px-[2vw] md:px-[0.7vw] justify-between"
 		>
 			<h2
-				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[7vw] md:text-[4.4vw] font-bold text-[#6a6868] dark:text-[#aeafae] mt-[1.2vw] ml-[1vw] md:mt-[0.7vw]"
+				class="move-from-buttom cursor-pointer hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[1.3rem] md:text-[2.5rem] font-bold text-[#6a6868] dark:text-[#aeafae] mt-[1rem] ml-[1vw] md:mt-[3rem]"
+				style="font-family: 'Boldonse', system-ui; font-weight: 400; font-style: normal;"
 			>
 				Sport Articles
 			</h2>
 
 			<!-- Filter Button -->
 			<button
-				class="p-2 bg-[#6a6868] dark:bg-white w-[7vw] h-[7vw] md:w-[3vw] md:h-[2.5vw] hover:bg-[#3bbb67] dark:hover:bg-[#d7d7d7] md:dark:hover:bg-[#83ff87] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-md"
+				class="p-2 bg-[#6a6868] mt-[1.2rem] md:mt-[4rem] dark:bg-white w-[7vw] h-[7vw] md:w-[3vw] md:h-[2.5vw] hover:bg-[#3bbb67] dark:hover:bg-[#d7d7d7] md:dark:hover:bg-[#83ff87] hover:text-[white] dark:hover:text-[black] hover:bg-[#3bbb67] dark:hover:bg-[#83ff87] transition duration-500 ease-in-out flex justify-center items-center rounded-md"
 				on:click={toggleCategories}
 				aria-label="Filter work"
 			>
@@ -193,10 +189,7 @@
 				/>
 			</div>
 		</div>
-
-		
 	</div>
-	
 </div>
 
 <style>

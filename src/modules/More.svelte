@@ -7,6 +7,7 @@
 	import Flowfi from '../image/flowfi3.gif';
 	import FlipCard from '../components/FlipCard.svelte';
 	import Building from '../image/building.gif';
+	import Icon from '@iconify/svelte';
 </script>
 
 <div
@@ -23,6 +24,7 @@
 		/>
 		<h1
 			class="text-center hover:text-[black] dark:hover:text-[white] transition duration-500 ease-in-out cursor-pointer sm:text-start md:text-start text-3xl sm:text-2xl md:text-5xl text-[#6a6868] dark:text-[#989898] font-semibold"
+			style="font-family: 'Boldonse', system-ui; font-weight: 400; font-style: normal;"
 		>
 			Yezir Hasan 👋🏽
 		</h1>
@@ -36,29 +38,42 @@
 			<h1
 				class="text-[4.3rem] md:text-[6rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 			>
-				SPORTS JOURNALIST
+				JOURNALIST •
 			</h1>
 			<h1
 				class="text-[4.3rem] md:text-[6rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 			>
-				BACKEND DEVELOPER
+				CREATIVE MANAGER •
 			</h1>
 			<h1
 				class="text-[4.3rem] md:text-[6rem] font-bold text-[#6a6868] dark:text-black tracking-tighter marquee-content"
 			>
-				CREATIVE MANAGER
+				VIBE CODER
 			</h1>
 		</div>
 	</div>
 
 	<!-- Prototypes Section -->
 	<div
-		class="h-[80rem] md:h-[90rem] w-full bg-[#cecece] dark:bg-[#1d1d1e] flex flex-col items-center p-[2rem]"
+		class="h-[94rem] md:h-[105rem] w-full bg-[#cecece] dark:bg-[#1d1d1e] flex flex-col items-center p-[2rem]"
 	>
+		<a href="/work/">
+			<h2
+				class="cursor-pointer text-[#6a6868] dark:text-[#989898] hover:text-[black] dark:hover:text-[white] transition duration-500 ease-in-out text-[2.5rem] md:text-[5.3rem] font-bold mt-[5rem] md:mt-[5rem] flex items-center gap-4 md:gap-[5rem]"
+				style="font-family: 'Boldonse', system-ui; font-weight: 400; font-style: normal;"
+			>
+				View my articles :) <Icon
+					icon="fluent:arrow-up-right-12-filled"
+					class="text-[5rem] md:text-[7.8rem]"
+				/>
+			</h2>
+		</a>
+
 		<h2
-			class="cursor-pointer text-[#363636] dark:text-white text-[2.5rem] md:text-[4.4vw] font-bold mt-[5rem] md:mt-[5rem]"
+			class="cursor-pointer text-[#6a6868] dark:text-[#989898] hover:text-[black] dark:hover:text-[white] transition duration-500 ease-in-out text-[2.5rem] md:text-[3.6rem] font-bold mt-[5rem] md:mt-[8rem]"
+			style="font-family: 'Boldonse', system-ui; font-weight: 400; font-style: normal;"
 		>
-			My Prototypes.
+			vibe code projects
 		</h2>
 
 		<div
@@ -141,7 +156,7 @@
 	.marquee-wrapper {
 		display: flex;
 		white-space: nowrap;
-		animation: marquee 12s linear infinite;
+		animation: marquee 13s linear infinite;
 	}
 
 	.marquee-content {
