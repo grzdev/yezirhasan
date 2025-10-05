@@ -17,7 +17,8 @@
 	class="flex items-center justify-center flex-col overflow-x-hidden"
 >
 	<h2
-		class="mt-[6rem] md:mt-[0rem] cursor-pointer text-[#6a6868] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2rem] md:text-[4rem] font-bold"
+		class="mt-[6rem] md:mt-[0rem] cursor-pointer text-[#6a6868] dark:text-[#aeafae] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[1.7rem] md:text-[3rem] font-bold"
+		style="font-family: 'Boldonse', system-ui; font-weight: 400; font-style: normal;"
 	>
 		Contact Card
 	</h2>
